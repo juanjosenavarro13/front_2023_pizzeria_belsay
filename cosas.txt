@@ -1,2 +1,3 @@
 hacer test
+agregar compodoc
 empezar a crear la pagina de carta

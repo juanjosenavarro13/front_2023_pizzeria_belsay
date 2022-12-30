@@ -10,9 +10,17 @@ describe('AppComponent', () => {
     }).compileComponents();
   });
 
-  it('should create the app', () => {
+  it('should create the app', (done: DoneFn) => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
+    expect(fixture).toBeTruthy();
     expect(app).toBeTruthy();
+
+    expect(app.loading).toBeTruthy();
+
+    setTimeout(() => {
+      expect(app.loading).toEqual(false);
+      done();
+    }, 2500);
   });
 });

@@ -7,10 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public loading = true;
+  private timeForLoading = 2000;
 
   constructor() {
+    this.initLoading();
+  }
+
+  private initLoading(): void {
     setTimeout(() => {
       this.loading = false;
-    }, 2000);
+    }, this.timeForLoading);
   }
 }
