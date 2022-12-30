@@ -3,21 +3,20 @@
     <div class="row">
       <div class="col-md-4">
         <h3>Acerca de nosotros</h3>
-        <p>Información sobre la empresa y sus valores.</p>
+        <p>{{ infoApp.info }}</p>
       </div>
       <div class="col-md-4">
         <h3>Enlaces útiles</h3>
         <ul>
-          <li><a href="#">Términos y condiciones</a></li>
-          <li><a href="#">Política de privacidad</a></li>
-          <li><a href="#">Mapa del sitio</a></li>
+          <li><a href="{{infoApp.links.facebook}}">Facebook</a></li>
+          <li><a routerLink="/localizacion">Mapa del sitio</a></li>
         </ul>
       </div>
       <div class="col-md-4">
         <h3>Contacto</h3>
-        <p>Dirección: Calle Falsa 123</p>
-        <p>Teléfono: +123 456 7890</p>
-        <p>Email: contacto@ejemplo.com</p>
+        <p>Dirección: <a routerLink="/localizacion" >{{ infoApp.address }}</a></p>
+        <p>Teléfono fijo: <a href="tel:+34{{ infoApp.phone1 }}">{{ infoApp.phone1 }}</a></p>
+        <p>Teléfono movil: <a href="tel:+34{{ infoApp.phone2 }}">{{ infoApp.phone2 }}</a></p>
       </div>
     </div>
   </div>

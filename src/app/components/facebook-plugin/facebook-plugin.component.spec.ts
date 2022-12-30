@@ -8,9 +8,8 @@ describe('FacebookPluginComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FacebookPluginComponent ]
-    })
-    .compileComponents();
+      declarations: [FacebookPluginComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(FacebookPluginComponent);
     component = fixture.componentInstance;

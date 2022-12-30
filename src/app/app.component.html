@@ -1,7 +1,12 @@
-<app-main-menu></app-main-menu>
+<div *ngIf="!loading">
+  <app-main-menu></app-main-menu>
 
-<div class="container my-3">
-  <router-outlet></router-outlet>
+  <div class="container my-3">
+    <app-breadcrumb></app-breadcrumb>
+    <router-outlet></router-outlet>
+  </div>
+
+  <app-main-footer></app-main-footer>
 </div>
 
-<app-main-footer></app-main-footer>
+<app-loading *ngIf="loading"></app-loading>

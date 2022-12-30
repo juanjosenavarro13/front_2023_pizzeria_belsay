@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MainFooterComponent } from './main-footer.component';
+import { PageLocationComponent } from './page-location.component';
 
-describe('MainFooterComponent', () => {
-  let component: MainFooterComponent;
-  let fixture: ComponentFixture<MainFooterComponent>;
+describe('PageLocationComponent', () => {
+  let component: PageLocationComponent;
+  let fixture: ComponentFixture<PageLocationComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [MainFooterComponent],
+      declarations: [PageLocationComponent],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(MainFooterComponent);
+    fixture = TestBed.createComponent(PageLocationComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

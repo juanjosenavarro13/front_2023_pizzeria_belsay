@@ -1,3 +1,4 @@
+import { PageLocationComponent } from './components/page-location/page-location.component';
 import { ErrorpageComponent } from './components/errorpage/errorpage.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
 import { NgModule } from '@angular/core';
@@ -7,6 +8,10 @@ const routes: Routes = [
   {
     path: '',
     component: HomepageComponent,
+  },
+  {
+    path: 'localizacion',
+    component: PageLocationComponent,
   },
   {
     path: '**',
