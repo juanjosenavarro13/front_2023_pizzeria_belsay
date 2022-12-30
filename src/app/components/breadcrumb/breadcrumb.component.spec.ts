@@ -7,13 +7,8 @@ import { BreadcrumbComponent } from './breadcrumb.component';
 
 class MockServices {
   // Router
-  public events = of(
-    new NavigationEnd(
-      0,
-      'http://localhost:4200/',
-      'http://localhost:4200/localizacion'
-    )
-  );
+  public events = of(new NavigationEnd(0, '/', '/localizacion'));
+  public url = '/carta';
 }
 
 describe('BreadcrumbComponent', () => {

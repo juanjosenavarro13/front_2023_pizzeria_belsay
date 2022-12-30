@@ -1,8 +1,20 @@
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a routerLink="/" routerLinkActive="active">Inicio</a></li>
-    <li *ngFor="let route of currentRoute; let index = index" class="breadcrumb-item" routerLink="{{route}}" routerLinkActive="active" aria-current="page">
-      <a routerLink="{{currentRouteLink[index + 1]}}" routerLinkActive="active" >{{route}}</a>
+    <li class="breadcrumb-item">
+      <a routerLink="/" routerLinkActive="active">Inicio</a>
+    </li>
+    <li
+      *ngFor="let route of currentRoute; let index = index"
+      class="breadcrumb-item"
+      routerLink="{{ route }}"
+      routerLinkActive="active"
+      aria-current="page"
+    >
+      <a
+        routerLink="{{ currentRouteLink[index + 1] }}"
+        routerLinkActive="active"
+        >{{ route }}</a
+      >
     </li>
   </ol>
 </nav>

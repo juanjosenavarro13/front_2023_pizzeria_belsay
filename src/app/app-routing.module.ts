@@ -14,6 +14,11 @@ const routes: Routes = [
     component: PageLocationComponent,
   },
   {
+    path: 'carta',
+    loadChildren: () =>
+      import('./carta/carta.module').then((m) => m.CartaModule),
+  },
+  {
     path: '**',
     component: ErrorpageComponent,
   },

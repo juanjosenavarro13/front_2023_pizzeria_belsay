@@ -29,6 +29,8 @@ export class BreadcrumbComponent {
    */
   constructor(private router: Router, private titleService: Title) {
     this.changeTitle();
+    this.currentRoute = this.splitRoute(this.router.url);
+    this.changeTitle(this.currentRoute[this.currentRoute.length - 1]);
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
         this.currentRoute = this.splitRoute(event.url);
