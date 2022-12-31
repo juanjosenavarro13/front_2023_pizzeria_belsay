@@ -13,6 +13,7 @@ describe('AppComponent', () => {
   it('should create the app', (done: DoneFn) => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
+
     expect(fixture).toBeTruthy();
     expect(app).toBeTruthy();
 

@@ -6,6 +6,7 @@ import { ErrorpageComponent } from './errorpage.component';
 describe('ErrorpageComponent', () => {
   let component: ErrorpageComponent;
   let fixture: ComponentFixture<ErrorpageComponent>;
+  // eslint-disable-next-line jasmine/no-unsafe-spy
   const routerSpy = { navigate: jasmine.createSpy('navigate') };
 
   beforeEach(async () => {
