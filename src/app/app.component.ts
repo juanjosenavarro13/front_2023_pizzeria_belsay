@@ -49,12 +49,11 @@ export class AppComponent implements OnInit {
     script.onload = () => {
       setTimeout(() => {
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        ((window as any).adsbygoogle || []).push({
+        (window as any).adsbygoogle.push({
           google_ad_client: 'ca-pub-4234128193055516',
           enable_page_level_ads: true,
         });
       }, 200);
-      console.log(script);
     };
 
     document.body.appendChild(script);
