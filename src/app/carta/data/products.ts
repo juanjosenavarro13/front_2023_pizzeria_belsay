@@ -31,4 +31,22 @@ export const products_data: product[] = [
       domicilio: { small: 8.25, medium: 11.2, family: 13.7 },
     },
   },
+  {
+    name: 'Veneciana',
+    category: categories_type.Pizzas,
+    ingredientes: 'Tomate, orégano mozzarella, salami, salchichas y york.',
+    precio: {
+      local: { small: 7.5, medium: 10.2, family: 12.5 },
+      domicilio: { small: 8.25, medium: 11.2, family: 13.7 },
+    },
+  },
+  {
+    name: 'Toscana',
+    category: categories_type.Pizzas,
+    ingredientes: 'Jamón, Atún y gambas.',
+    precio: {
+      local: { small: 7.5, medium: 10.2, family: 12.5 },
+      domicilio: { small: 8.25, medium: 11.2, family: 13.7 },
+    },
+  },
 ];
