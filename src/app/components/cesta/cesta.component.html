@@ -5,7 +5,7 @@
   aria-labelledby="offcanvasRightLabel"
 >
   <div class="offcanvas-header">
-    <h5 id="offcanvasRightLabel">Cesta</h5>
+    <h5 class="text-success jnp-center" id="offcanvasRightLabel">Cesta</h5>
     <button
       type="button"
       class="btn-close text-reset"
@@ -31,8 +31,8 @@
             <td role="button" (click)="deleteItem(index)">X</td>
           </tr>
           <tr *ngIf="!cesta?.local">
-            <th scope="row">Reparto a domicilio</th>
-            <td>- -</td>
+            <th scope="row text-success">Reparto a domicilio</th>
+            <td></td>
             <td>{{ 1.5 | precio }}</td>
             <td></td>
           </tr>

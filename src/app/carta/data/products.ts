@@ -177,4 +177,5 @@ export const products_data: product[] = [
       domicilio: { small: 9.3, medium: 12.6, family: 15.2 },
     },
   },
+  // chapatas
 ];
