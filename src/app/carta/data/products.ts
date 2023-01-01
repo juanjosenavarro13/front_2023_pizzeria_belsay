@@ -49,4 +49,42 @@ export const products_data: product[] = [
       domicilio: { small: 8.25, medium: 11.2, family: 13.7 },
     },
   },
+  {
+    name: 'De la ria',
+    category: categories_type.Pizzas,
+    ingredientes: 'Mejillones, atún y gambas.',
+    precio: {
+      local: { small: 7.5, medium: 10.2, family: 12.5 },
+      domicilio: { small: 8.25, medium: 11.2, family: 13.7 },
+    },
+  },
+  {
+    name: 'Napolitana',
+    category: categories_type.Pizzas,
+    ingredientes:
+      'Tomate, orégano, mozzarella, jamón serrano, champiñón y beicon.',
+    precio: {
+      local: { small: 7.5, medium: 10.2, family: 12.5 },
+      domicilio: { small: 8.25, medium: 11.2, family: 13.7 },
+    },
+  },
+  {
+    name: 'Romana',
+    category: categories_type.Pizzas,
+    ingredientes:
+      'Tomate, orégano, mozzarella, aceitunas, alcachofa, champiñon y york.',
+    precio: {
+      local: { small: 8.5, medium: 11.2, family: 14.6 },
+      domicilio: { small: 9.3, medium: 12.6, family: 15.2 },
+    },
+  },
+  {
+    name: 'Kebab',
+    category: categories_type.Pizzas,
+    ingredientes: 'Carne de pollo de kebab y salsa blanca.',
+    precio: {
+      local: { small: 8.5, medium: 11.2, family: 14.6 },
+      domicilio: { small: 9.3, medium: 12.6, family: 15.2 },
+    },
+  },
 ];
