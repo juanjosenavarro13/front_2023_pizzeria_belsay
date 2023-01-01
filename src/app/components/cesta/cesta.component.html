@@ -15,7 +15,7 @@
   </div>
   <div class="offcanvas-body">
     <div class="table-responsive" *ngIf="cesta?.products?.length !== 0">
-      <table class="table" aria-describedby="tabla de cesta">
+      <table class="table text-center" aria-describedby="tabla de cesta">
         <thead>
           <tr>
             <th scope="col">Producto</th>
@@ -24,11 +24,23 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let product of cesta?.products">
+          <tr *ngFor="let product of cesta?.products; let index = index">
             <th scope="row">{{ product.name }}</th>
             <td>{{ product.tam }}</td>
             <td>{{ product.price | precio }}</td>
-            <td>X</td>
+            <td role="button" (click)="deleteItem(index)">X</td>
+          </tr>
+          <tr *ngIf="!cesta?.local">
+            <th scope="row">Reparto a domicilio</th>
+            <td>- -</td>
+            <td>{{ 1.5 | precio }}</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <th scope="row">{{ cesta?.total | precio }}</th>
+            <td></td>
           </tr>
         </tbody>
       </table>

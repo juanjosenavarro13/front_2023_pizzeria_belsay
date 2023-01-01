@@ -1,3 +1,4 @@
+import { CestaService } from './../../services/cesta.service';
 import { cesta } from './../../models/cesta.model';
 import { Component, Input } from '@angular/core';
 
@@ -10,11 +11,23 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./cesta.component.scss'],
 })
 export class CestaComponent {
+  constructor(private CestaService: CestaService) {
+    console.log(this.cesta);
+  }
   /**
    * input de cesta
    */
   @Input() cesta: cesta = {
     products: [],
     local: null,
+    total: 0,
   };
+
+  /**
+   * delete item
+   * @param id
+   */
+  deleteItem(id: number): void {
+    this.cesta = this.CestaService.deleteProduct(id);
+  }
 }

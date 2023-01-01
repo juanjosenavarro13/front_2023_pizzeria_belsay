@@ -11,7 +11,7 @@ export class CestaService {
   /**
    * cesta
    */
-  private cesta: cesta = { products: [], local: null };
+  private cesta: cesta = { products: [], local: null, total: 0 };
 
   /**
    * constructor de cesta
@@ -30,6 +30,7 @@ export class CestaService {
       JSON.parse(localStorage.getItem('cesta')!) || {
         products: [],
         local: null,
+        total: 0,
       }
     );
   }
@@ -46,6 +47,7 @@ export class CestaService {
       $('#modalCesta').show();
     } else {
       this.cesta.products.push(product);
+      this.cesta.total = this.calculatedTotal();
       localStorage.setItem('cesta', JSON.stringify(this.cesta));
     }
   }
@@ -54,8 +56,36 @@ export class CestaService {
    * reiniciar cesta
    */
   public resetCesta() {
-    const cesta: cesta = { products: [], local: null };
+    const cesta: cesta = { products: [], local: null, total: 0 };
     this.cesta = cesta;
     localStorage.setItem('cesta', JSON.stringify(cesta));
+  }
+
+  /**
+   * delete product
+   * @param id
+   * @returns
+   */
+  public deleteProduct(id: number): cesta {
+    this.cesta?.products.splice(id, 1);
+    if (this.cesta?.total) {
+      this.cesta.total = this.calculatedTotal();
+    }
+    localStorage.setItem('cesta', JSON.stringify(this.cesta));
+    return this.cesta;
+  }
+
+  private calculatedTotal(): number {
+    let total = 0;
+
+    this.cesta?.products.forEach((product) => {
+      total += product.price;
+    });
+
+    if (!this.cesta?.local) {
+      total += 1.5;
+    }
+
+    return Number(total.toFixed(2));
   }
 }

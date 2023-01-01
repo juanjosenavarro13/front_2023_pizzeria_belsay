@@ -8,22 +8,37 @@
       <div class="col-md-4">
         <h3>Enlaces útiles</h3>
         <ul>
-          <li><a href="{{ infoApp.links.facebook }}">Facebook</a></li>
-          <li><a routerLink="/localizacion">Mapa del sitio</a></li>
+          <li>
+            <a class="text-decoration-none" href="{{ infoApp.links.facebook }}"
+              >Facebook</a
+            >
+          </li>
+          <li>
+            <a class="text-decoration-none" routerLink="/localizacion"
+              >Mapa del sitio</a
+            >
+          </li>
         </ul>
       </div>
       <div class="col-md-4">
         <h3>Contacto</h3>
         <p>
-          Dirección: <a routerLink="/localizacion">{{ infoApp.address }}</a>
+          Dirección:
+          <a class="text-decoration-none" routerLink="/localizacion">{{
+            infoApp.address
+          }}</a>
         </p>
         <p>
           Teléfono fijo:
-          <a href="tel:+34{{ infoApp.phone1 }}">{{ infoApp.phone1 }}</a>
+          <a class="text-decoration-none" href="tel:+34{{ infoApp.phone1 }}">{{
+            infoApp.phone1
+          }}</a>
         </p>
         <p>
           Teléfono movil:
-          <a href="tel:+34{{ infoApp.phone2 }}">{{ infoApp.phone2 }}</a>
+          <a class="text-decoration-none" href="tel:+34{{ infoApp.phone2 }}">{{
+            infoApp.phone2
+          }}</a>
         </p>
       </div>
     </div>

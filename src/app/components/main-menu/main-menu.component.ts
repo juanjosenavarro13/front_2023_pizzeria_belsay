@@ -16,6 +16,7 @@ export class MainMenuComponent {
   @Input() cesta: cesta = {
     products: [],
     local: null,
+    total: 0,
   };
   /**
    * output del evento

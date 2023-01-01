@@ -17,6 +17,7 @@ export class AppComponent {
   public cesta: cesta = {
     products: [],
     local: null,
+    total: 0,
   };
   /**
    * boolean que controla el loading de la pagina

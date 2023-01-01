@@ -7,4 +7,5 @@ export type cestaProductModel = {
 export type cesta = {
   products: cestaProductModel[];
   local: boolean | null;
+  total: number;
 } | null;

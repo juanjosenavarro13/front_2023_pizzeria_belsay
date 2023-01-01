@@ -1,3 +1,2 @@
-- poder eliminar productos de la cesta
-- total del precio de los productos
-- sumar envio si es a domicilio
+- hacer test
+- compodoc
