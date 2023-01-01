@@ -11,9 +11,11 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./cesta.component.scss'],
 })
 export class CestaComponent {
-  constructor(private CestaService: CestaService) {
-    console.log(this.cesta);
-  }
+  /**
+   * constructor
+   * @param CestaService
+   */
+  constructor(private CestaService: CestaService) {}
   /**
    * input de cesta
    */

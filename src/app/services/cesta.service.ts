@@ -75,6 +75,10 @@ export class CestaService {
     return this.cesta;
   }
 
+  /**
+   * calcular total
+   * @returns
+   */
   private calculatedTotal(): number {
     let total = 0;
 

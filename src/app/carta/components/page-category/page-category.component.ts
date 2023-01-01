@@ -28,7 +28,7 @@ export class PageCategoryComponent {
   /**
    * datos de categorias
    */
-  private categories_data = categories_data;
+  public categories_data = categories_data;
 
   /**
    * datos de productos
@@ -55,7 +55,7 @@ export class PageCategoryComponent {
    * @param name
    * @returns
    */
-  private validatedCategory(name: string) {
+  public validatedCategory(name: string) {
     return this.categories_data.find((category) => category.name === name) !==
       undefined
       ? true

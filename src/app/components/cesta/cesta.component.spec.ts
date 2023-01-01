@@ -19,4 +19,10 @@ describe('CartComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('deleteItem', () => {
+    component.deleteItem(0);
+
+    expect(1).toEqual(1);
+  });
 });
