@@ -10,13 +10,22 @@ import { cesta } from 'src/app/models/cesta.model';
   styleUrls: ['./main-menu.component.scss'],
 })
 export class MainMenuComponent {
+  /**
+   * input de cesta
+   */
   @Input() cesta: cesta = {
     products: [],
     local: null,
   };
+  /**
+   * output del evento
+   */
   @Output()
   openCestaEvent = new EventEmitter<true>();
 
+  /**
+   * click para abrir cesta
+   */
   clickCesta() {
     this.openCestaEvent.emit(true);
   }

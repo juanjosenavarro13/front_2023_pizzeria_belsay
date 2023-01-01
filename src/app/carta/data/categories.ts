@@ -1,4 +1,7 @@
 import { categories_type, category } from './carta.model';
+/**
+ * categorias de productos
+ */
 export const categories_data: category[] = [
   {
     name: categories_type.Pizzas,

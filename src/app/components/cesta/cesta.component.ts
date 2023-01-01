@@ -10,6 +10,9 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./cesta.component.scss'],
 })
 export class CestaComponent {
+  /**
+   * input de cesta
+   */
   @Input() cesta: cesta = {
     products: [],
     local: null,

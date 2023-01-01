@@ -11,6 +11,9 @@ import { cesta } from './models/cesta.model';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
+  /**
+   * cesta
+   */
   public cesta: cesta = {
     products: [],
     local: null,
@@ -42,6 +45,9 @@ export class AppComponent {
     }, this.timeForLoading);
   }
 
+  /**
+   * obtener cesta
+   */
   getCesta() {
     this.cesta = this.CestaService.getCesta();
   }

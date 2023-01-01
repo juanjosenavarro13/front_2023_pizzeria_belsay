@@ -1,15 +1,29 @@
 import { cesta, cestaProductModel } from './../models/cesta.model';
 import { Injectable } from '@angular/core';
 
+/**
+ * servicio para cesta
+ */
 @Injectable({
   providedIn: 'root',
 })
 export class CestaService {
+  /**
+   * cesta
+   */
   private cesta: cesta = { products: [], local: null };
+
+  /**
+   * constructor de cesta
+   */
   constructor() {
     this.cesta = this.getCesta();
   }
 
+  /**
+   * obtener cesta
+   * @returns
+   */
   public getCesta(): cesta {
     return (
       // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
@@ -20,6 +34,11 @@ export class CestaService {
     );
   }
 
+  /**
+   * agregar producto a la cesta
+   * @param product
+   * @param local
+   */
   public addProduct(product: cestaProductModel, local: boolean): void {
     if (this.cesta?.local === null) this.cesta.local = local;
 
@@ -31,6 +50,9 @@ export class CestaService {
     }
   }
 
+  /**
+   * reiniciar cesta
+   */
   public resetCesta() {
     const cesta: cesta = { products: [], local: null };
     this.cesta = cesta;
