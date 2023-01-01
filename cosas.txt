@@ -1,3 +1,2 @@
-- hacer test
-- compodoc
+- agregar boton de llamar en la cesta si es para domicilio
 - intentar pasar toda la cesta a observables

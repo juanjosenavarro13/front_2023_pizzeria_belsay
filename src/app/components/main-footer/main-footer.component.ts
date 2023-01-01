@@ -15,4 +15,9 @@ export class MainFooterComponent {
    * variable que obtiene la info de variables de entorno
    */
   public infoApp: InfoApp = environment.infoApp;
+
+  /**
+   * fecha
+   */
+  public fecha = new Date();
 }

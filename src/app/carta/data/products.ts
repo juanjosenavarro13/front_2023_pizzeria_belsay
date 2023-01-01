@@ -87,4 +87,94 @@ export const products_data: product[] = [
       domicilio: { small: 9.3, medium: 12.6, family: 15.2 },
     },
   },
+  {
+    name: 'Parmesana',
+    category: categories_type.Pizzas,
+    ingredientes: 'Tomate, orégano, mozzarella, mezcla mágica de quesos.',
+    precio: {
+      local: { small: 7.5, medium: 10.2, family: 12.5 },
+      domicilio: { small: 8.25, medium: 11.2, family: 13.7 },
+    },
+  },
+  {
+    name: 'Parmesana',
+    category: categories_type.Pizzas,
+    ingredientes: 'Tomate, orégano, mozzarella, mezcla mágica de quesos.',
+    precio: {
+      local: { small: 7.5, medium: 10.2, family: 12.5 },
+      domicilio: { small: 8.25, medium: 11.2, family: 13.7 },
+    },
+  },
+  {
+    name: 'Especialidad',
+    category: categories_type.Pizzas,
+    ingredientes: 'Tomate natural, roquefort, anchoa y ternera.',
+    precio: {
+      local: { small: 8.5, medium: 11.5, family: 14.6 },
+      domicilio: { small: 9.3, medium: 12.6, family: 15.2 },
+    },
+  },
+  {
+    name: 'Piamonte',
+    category: categories_type.Pizzas,
+    ingredientes: 'Salsicha, beicon y salsa gaucha.',
+    precio: {
+      local: { small: 7.5, medium: 10.2, family: 13.7 },
+      domicilio: { small: 8.25, medium: 11.2, family: 13.7 },
+    },
+  },
+  {
+    name: 'Genovesa',
+    category: categories_type.Pizzas,
+    ingredientes: 'Tomate, orégano, mozzarella, gamba, anchoa y champiñón.',
+    precio: {
+      local: { small: 7.5, medium: 10.2, family: 12.5 },
+      domicilio: { small: 8.25, medium: 11.2, family: 13.7 },
+    },
+  },
+  {
+    name: 'Varonesa',
+    category: categories_type.Pizzas,
+    ingredientes: 'Champiñones, york, peperoni y extra de mozarella.',
+    precio: {
+      local: { small: 8.5, medium: 11.5, family: 14.6 },
+      domicilio: { small: 9.3, medium: 12.6, family: 15.2 },
+    },
+  },
+  {
+    name: 'Córcegana',
+    category: categories_type.Pizzas,
+    ingredientes: 'Beicon, pollo y extra de queso.',
+    precio: {
+      local: { small: 7.5, medium: 10.2, family: 12.5 },
+      domicilio: { small: 8.25, medium: 11.2, family: 13.7 },
+    },
+  },
+  {
+    name: 'Siciliana',
+    category: categories_type.Pizzas,
+    ingredientes: 'Tomate, orégano, mozzarella, champiñon, atún y york.',
+    precio: {
+      local: { small: 7.5, medium: 10.2, family: 12.5 },
+      domicilio: { small: 8.25, medium: 11.2, family: 13.7 },
+    },
+  },
+  {
+    name: 'Alessandrina',
+    category: categories_type.Pizzas,
+    ingredientes: 'Peperoni, pimiento verde, cebolla y beicon.',
+    precio: {
+      local: { small: 8.5, medium: 11.5, family: 14.6 },
+      domicilio: { small: 9.3, medium: 12.6, family: 15.2 },
+    },
+  },
+  {
+    name: 'Rosario',
+    category: categories_type.Pizzas,
+    ingredientes: 'Beicon, pollo, gambas y cebolla.',
+    precio: {
+      local: { small: 8.5, medium: 11.5, family: 14.6 },
+      domicilio: { small: 9.3, medium: 12.6, family: 15.2 },
+    },
+  },
 ];
