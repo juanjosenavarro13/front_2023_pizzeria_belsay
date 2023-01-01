@@ -1,20 +1,33 @@
 <nav aria-label="breadcrumb">
-  <ol class="breadcrumb">
+  <ol class="breadcrumb text-uppercase">
     <li class="breadcrumb-item">
-      <a routerLink="/" routerLinkActive="active">Inicio</a>
+      <a
+        class="text-decoration-none text-success"
+        routerLink="/"
+        routerLinkActive="active"
+        >Inicio</a
+      >
     </li>
     <li
-      *ngFor="let route of currentRoute; let index = index"
+      *ngFor="let route of currentRoute; let index = index; let last = last"
       class="breadcrumb-item"
-      routerLink="{{ route }}"
-      routerLinkActive="active"
       aria-current="page"
     >
       <a
+        *ngIf="!last"
+        class="text-success"
+        [ngClass]="{ 'text-decoration-none': !last }"
         routerLink="{{ currentRouteLink[index + 1] }}"
         routerLinkActive="active"
         >{{ route }}</a
       >
+      <b
+        *ngIf="last"
+        class="text-success"
+        [ngClass]="{ 'text-decoration-none': !last }"
+      >
+        {{ route }}
+      </b>
     </li>
   </ol>
 </nav>

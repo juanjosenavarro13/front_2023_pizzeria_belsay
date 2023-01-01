@@ -1,0 +1,40 @@
+<div
+  class="offcanvas offcanvas-end"
+  tabindex="-1"
+  id="offcanvasRight"
+  aria-labelledby="offcanvasRightLabel"
+>
+  <div class="offcanvas-header">
+    <h5 id="offcanvasRightLabel">Cesta</h5>
+    <button
+      type="button"
+      class="btn-close text-reset"
+      data-bs-dismiss="offcanvas"
+      aria-label="Close"
+    ></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="table-responsive" *ngIf="cesta?.products?.length !== 0">
+      <table class="table" aria-describedby="tabla de cesta">
+        <thead>
+          <tr>
+            <th scope="col">Producto</th>
+            <th scope="col">Tamaño</th>
+            <th scope="col">Precio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let product of cesta?.products">
+            <th scope="row">{{ product.name }}</th>
+            <td>{{ product.tam }}</td>
+            <td>{{ product.price | precio }}</td>
+            <td>X</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div *ngIf="cesta?.products?.length === 0">
+      <h2 class="text-center text-success display-2"><b>Cesta vacía</b></h2>
+    </div>
+  </div>
+</div>

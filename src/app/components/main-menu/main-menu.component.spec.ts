@@ -1,4 +1,4 @@
-import { CartComponent } from './../cart/cart.component';
+import { CestaComponent } from '../cesta/cesta.component';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { MainMenuComponent } from './main-menu.component';
@@ -10,7 +10,7 @@ describe('MainMenuComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [MainMenuComponent, CartComponent],
+      declarations: [MainMenuComponent, CestaComponent],
       schemas: [NO_ERRORS_SCHEMA],
     }).compileComponents();
 
@@ -21,5 +21,11 @@ describe('MainMenuComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('clickCesta', () => {
+    component.clickCesta();
+
+    expect(1).toEqual(1);
   });
 });

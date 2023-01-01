@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { category } from '../../data/carta.model';
-import { categories } from '../../data/categories';
+import { categories_data } from '../../data/categories';
 
 @Component({
   selector: 'app-homepage-carta',
@@ -8,5 +8,5 @@ import { categories } from '../../data/categories';
   styleUrls: ['./homepage-carta.component.scss'],
 })
 export class HomepageCartaComponent {
-  public categories: category[] = categories;
+  public categories_data: category[] = categories_data;
 }

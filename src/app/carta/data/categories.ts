@@ -1,15 +1,51 @@
-import { category } from './carta.model';
-export const categories: category[] = [
-  { name: 'Pizzas', img: '../../../assets/carta/pizzas.png' },
-  { name: 'Chapatas', img: '../../../assets/carta/chapata.jpg' },
-  { name: 'Hamburguesas', img: '../../../assets/carta/hamburguesa.png' },
-  { name: 'Paninis', img: '../../../assets/carta/panini.jpg' },
-  { name: 'Bocatas', img: '../../../assets/carta/bocata.png' },
-  { name: 'Hot dogs', img: '../../../assets/carta/hotdog.jpg' },
-  { name: 'Sandwiches', img: '../../../assets/carta/sandwich.png' },
-  { name: 'Patatas', img: '../../../assets/carta/patata.jpg' },
-  { name: 'Nachos', img: '../../../assets/carta/nacho.jpg' },
-  { name: 'Pollos', img: '../../../assets/carta/pollo.jpg' },
-  { name: 'Ensaladas', img: '../../../assets/carta/ensalada.jpg' },
-  { name: 'Bebidas', img: '../../../assets/carta/bebida.jpg' },
+import { categories_type, category } from './carta.model';
+export const categories_data: category[] = [
+  {
+    name: categories_type.Pizzas,
+    img: '../../../assets/carta/' + categories_type.Pizzas + '.png',
+  },
+  {
+    name: categories_type.Chapatas,
+    img: '../../../assets/carta/' + categories_type.Chapatas + '.png',
+  },
+  {
+    name: categories_type.Hamburguesas,
+    img: '../../../assets/carta/' + categories_type.Hamburguesas + '.png',
+  },
+  {
+    name: categories_type.Paninis,
+    img: '../../../assets/carta/' + categories_type.Paninis + '.png',
+  },
+  {
+    name: categories_type.Bocatas,
+    img: '../../../assets/carta/' + categories_type.Bocatas + '.png',
+  },
+  {
+    name: categories_type.Hot_dogs,
+    img: '../../../assets/carta/' + categories_type.Hot_dogs + '.png',
+  },
+  {
+    name: categories_type.Sandwiches,
+    img: '../../../assets/carta/' + categories_type.Sandwiches + '.png',
+  },
+  {
+    name: categories_type.Patatas,
+    img: '../../../assets/carta/' + categories_type.Patatas + '.png',
+  },
+  {
+    name: categories_type.Nachos,
+    img: '../../../assets/carta/' + categories_type.Nachos + '.png',
+  },
+  {
+    name: categories_type.Pollos,
+    img: '../../../assets/carta/' + categories_type.Pollos + '.png',
+  },
+  {
+    name: categories_type.Ensaladas,
+    img: '../../../assets/carta/' + categories_type.Ensaladas + '.png',
+  },
+  {
+    name: categories_type.Bebidas,
+    img: '../../../assets/carta/' + categories_type.Bebidas + '.png',
+  },
 ];

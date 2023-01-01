@@ -1,0 +1,37 @@
+<div class="modal" id="modalCesta" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">
+          Tus productos son de {{ cesta?.local ? "local" : "domicilio" }}
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+          (click)="closeModal()"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          ¿Desear eliminar todos los productos de la cesta para añadir nuevos
+          productos de {{ cesta?.local ? "domicilio" : "local" }} ?
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-secondary"
+          data-bs-dismiss="modal"
+          (click)="closeModal()"
+        >
+          Cerrar
+        </button>
+        <button type="button" class="btn btn-success" (click)="resetCesta()">
+          Si, eliminar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

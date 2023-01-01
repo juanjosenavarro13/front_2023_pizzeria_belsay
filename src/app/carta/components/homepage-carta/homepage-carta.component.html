@@ -1,7 +1,10 @@
 <div class="card">
   <div class="card-body">
     <div class="row">
-      <div class="col-sm-6 col-lg-3 mt-2" *ngFor="let category of categories">
+      <div
+        class="col-sm-6 col-lg-3 mt-2"
+        *ngFor="let category of categories_data"
+      >
         <div class="card">
           <a routerLink="{{ category.name }}">
             <img

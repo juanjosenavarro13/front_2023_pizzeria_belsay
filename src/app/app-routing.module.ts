@@ -14,7 +14,7 @@ const routes: Routes = [
     component: PageLocationComponent,
   },
   {
-    path: 'carta',
+    path: 'menu',
     loadChildren: () =>
       import('./carta/carta.module').then((m) => m.CartaModule),
   },

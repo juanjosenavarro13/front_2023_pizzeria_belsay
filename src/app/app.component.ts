@@ -1,4 +1,6 @@
+import { CestaService } from './services/cesta.service';
 import { Component } from '@angular/core';
+import { cesta } from './models/cesta.model';
 
 /**
  * app component
@@ -9,6 +11,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
+  public cesta: cesta = {
+    products: [],
+    local: null,
+  };
   /**
    * boolean que controla el loading de la pagina
    */
@@ -22,8 +28,9 @@ export class AppComponent {
   /**
    * constructor
    */
-  constructor() {
+  constructor(private CestaService: CestaService) {
     this.initLoading();
+    this.getCesta();
   }
 
   /**
@@ -33,5 +40,9 @@ export class AppComponent {
     setTimeout(() => {
       this.loading = false;
     }, this.timeForLoading);
+  }
+
+  getCesta() {
+    this.cesta = this.CestaService.getCesta();
   }
 }

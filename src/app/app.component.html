@@ -1,5 +1,5 @@
 <div *ngIf="!loading">
-  <app-main-menu></app-main-menu>
+  <app-main-menu [cesta]="cesta" (openCestaEvent)="getCesta()"></app-main-menu>
 
   <div class="container my-3">
     <app-breadcrumb></app-breadcrumb>
@@ -10,3 +10,6 @@
 </div>
 
 <app-loading *ngIf="loading"></app-loading>
+
+<!-- modal -->
+<app-modal-cesta></app-modal-cesta>
