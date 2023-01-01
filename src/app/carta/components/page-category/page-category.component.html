@@ -84,7 +84,7 @@
                     role="button"
                     (click)="
                       addCart(
-                        category + ': ' + product.name,
+                        category.toUpperCase() + ': ' + product.name,
                         'Pequeña',
                         product.precio.local?.small
                       )
@@ -98,7 +98,7 @@
                     role="button"
                     (click)="
                       addCart(
-                        category + ': ' + product.name,
+                        category.toUpperCase() + ': ' + product.name,
                         'Mediana',
                         product.precio.local?.medium
                       )
@@ -112,7 +112,7 @@
                     role="button"
                     (click)="
                       addCart(
-                        category + ': ' + product.name,
+                        category.toUpperCase() + ': ' + product.name,
                         'Familiar',
                         product.precio.local?.family
                       )
@@ -148,7 +148,7 @@
                     role="button"
                     (click)="
                       addCart(
-                        category + ': ' + product.name,
+                        category.toUpperCase() + ': ' + product.name,
                         'Pequeña',
                         product.precio.domicilio?.small,
                         false
@@ -163,7 +163,7 @@
                     role="button"
                     (click)="
                       addCart(
-                        category + ': ' + product.name,
+                        category.toUpperCase() + ': ' + product.name,
                         'Mediana',
                         product.precio.domicilio?.medium,
                         false
@@ -178,7 +178,7 @@
                     role="button"
                     (click)="
                       addCart(
-                        category + ': ' + product.name,
+                        category.toUpperCase() + ': ' + product.name,
                         'Familiar',
                         product.precio.domicilio?.family,
                         false

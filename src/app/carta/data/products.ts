@@ -3,32 +3,32 @@ import { categories_type, product } from './carta.model';
  * productos
  */
 export const products_data: product[] = [
+  // pizzas
   {
-    name: 'pizza normal',
+    name: 'Milanesa',
     category: categories_type.Pizzas,
-    ingredientes:
-      'tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, ',
+    ingredientes: 'Tomate, orégano, mozzarella y york.',
     precio: {
-      local: { small: 1.1, medium: 2.2, family: 3.3 },
-      domicilio: { small: 1.3, medium: 2.5 },
+      local: { small: 5.5, medium: 7.6, family: 9.2 },
+      domicilio: { small: 6.3, medium: 8.3, family: 10.2 },
     },
   },
   {
-    name: 'pizza sin local',
+    name: 'Americana',
     category: categories_type.Pizzas,
-    ingredientes:
-      'tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, ',
+    ingredientes: 'Salsa barbacoa, ternera, beicon y cebolla.',
     precio: {
-      domicilio: { small: 1.3, medium: 2.5, family: 3.12 },
+      local: { small: 7.5, medium: 10.2, family: 12.5 },
+      domicilio: { small: 8.25, medium: 11.2, family: 13.7 },
     },
   },
   {
-    name: 'pizza sin domicilio',
+    name: 'Hawaiana',
     category: categories_type.Pizzas,
-    ingredientes:
-      'tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, tomate, ',
+    ingredientes: 'Tomate, orégano, extra de mozzarella, piña y jamón.',
     precio: {
-      local: { small: 1.3, medium: 2.5, family: 3.12 },
+      local: { small: 7.5, medium: 10.2, family: 12.5 },
+      domicilio: { small: 8.25, medium: 11.2, family: 13.7 },
     },
   },
 ];

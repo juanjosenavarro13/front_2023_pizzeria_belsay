@@ -1,4 +1,3 @@
-import { categories_data } from './../../data/categories';
 import { CestaService } from './../../../services/cesta.service';
 import { NO_ERRORS_SCHEMA } from '@angular/core';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
