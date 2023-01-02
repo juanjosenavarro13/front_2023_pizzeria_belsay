@@ -178,4 +178,53 @@ export const products_data: product[] = [
     },
   },
   // chapatas
+  {
+    name: 'Charra',
+    category: categories_type.Chapatas,
+    ingredientes: 'Chapata base y york.',
+    precio: {
+      local: { small: 3.9, medium: 6.5 },
+    },
+  },
+  {
+    name: 'Tijuana',
+    category: categories_type.Chapatas,
+    ingredientes: 'Chapata base, jamón serrano y atún.',
+    precio: {
+      local: { small: 4.7, medium: 7.7 },
+    },
+  },
+  {
+    name: 'Mexinaca',
+    category: categories_type.Chapatas,
+    ingredientes: 'Chapata base, beicon, atún y champiñón.',
+    precio: {
+      local: { small: 5.55, medium: 8.8 },
+    },
+  },
+  {
+    name: 'Ranchera',
+    category: categories_type.Chapatas,
+    ingredientes: 'Chapata base, champiñón y york.',
+    precio: {
+      local: { small: 4.7, medium: 7.7 },
+    },
+  },
+  {
+    name: 'Maya',
+    category: categories_type.Chapatas,
+    ingredientes: 'Chapata base, mezcla mágica de quesos.',
+    precio: {
+      local: { small: 5.55, medium: 8.8 },
+    },
+  },
+  {
+    name: 'Mariachi',
+    category: categories_type.Chapatas,
+    ingredientes: 'Chapata base, salmón, gambas y champiñón.',
+    precio: {
+      local: { small: 5.55, medium: 8.8 },
+    },
+  },
+  // hamburguesas
 ];
