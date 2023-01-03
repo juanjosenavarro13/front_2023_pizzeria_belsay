@@ -1,2 +1,3 @@
-- agregar boton de llamar en la cesta si es para domicilio
 - intentar pasar toda la cesta a observables
+- agregar boton de llamar en la cesta si es para domicilio
+- agregar boton para vaciar la cesta

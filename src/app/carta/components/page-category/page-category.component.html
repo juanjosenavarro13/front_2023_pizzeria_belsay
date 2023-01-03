@@ -15,7 +15,25 @@
               >{{ product.ingredientes }}
             </p>
             <div class="row">
-              <div class="col-6 text-center">
+              <div
+                class="text-center"
+                [ngClass]="{
+                  'col-12':
+                    (product.precio.local?.small ||
+                      product.precio.local?.medium ||
+                      product.precio.local?.family) &&
+                    !product.precio.domicilio?.small &&
+                    !product.precio.domicilio?.medium &&
+                    !product.precio.domicilio?.family,
+                  'col-6':
+                    (product.precio.local?.small ||
+                      product.precio.local?.medium ||
+                      product.precio.local?.family) &&
+                    (product.precio.domicilio?.small ||
+                      product.precio.domicilio?.medium ||
+                      product.precio.domicilio?.family)
+                }"
+              >
                 <p
                   *ngIf="
                     product.precio.local?.small ||
@@ -35,7 +53,25 @@
                   Familiar: {{ product.precio.local?.family | precio }}
                 </p>
               </div>
-              <div class="col-6 text-center">
+              <div
+                class="text-center"
+                [ngClass]="{
+                  'col-12':
+                    (product.precio.domicilio?.small ||
+                      product.precio.domicilio?.medium ||
+                      product.precio.domicilio?.family) &&
+                    !product.precio.local?.small &&
+                    !product.precio.local?.medium &&
+                    !product.precio.local?.family,
+                  'col-6':
+                    (product.precio.domicilio?.small ||
+                      product.precio.domicilio?.medium ||
+                      product.precio.domicilio?.family) &&
+                    (product.precio.local?.small ||
+                      product.precio.local?.medium ||
+                      product.precio.local?.family)
+                }"
+              >
                 <p
                   *ngIf="
                     product.precio.domicilio?.small ||
@@ -59,7 +95,25 @@
             <!-- botones de carrito -->
             <div class="row">
               <!-- botones de añadir local -->
-              <div class="dropdown col-6">
+              <div
+                class="dropdown"
+                [ngClass]="{
+                  'col-12':
+                    (product.precio.local?.small ||
+                      product.precio.local?.medium ||
+                      product.precio.local?.family) &&
+                    !product.precio.domicilio?.small &&
+                    !product.precio.domicilio?.medium &&
+                    !product.precio.domicilio?.family,
+                  'col-6':
+                    (product.precio.local?.small ||
+                      product.precio.local?.medium ||
+                      product.precio.local?.family) &&
+                    (product.precio.domicilio?.small ||
+                      product.precio.domicilio?.medium ||
+                      product.precio.domicilio?.family)
+                }"
+              >
                 <button
                   *ngIf="
                     product.precio.local?.small ||
@@ -123,7 +177,25 @@
                 </ul>
               </div>
               <!-- botones de añadir domicilio -->
-              <div class="dropdown col-6">
+              <div
+                class="dropdown"
+                [ngClass]="{
+                  'col-12':
+                    (product.precio.domicilio?.small ||
+                      product.precio.domicilio?.medium ||
+                      product.precio.domicilio?.family) &&
+                    !product.precio.local?.small &&
+                    !product.precio.local?.medium &&
+                    !product.precio.local?.family,
+                  'col-6':
+                    (product.precio.domicilio?.small ||
+                      product.precio.domicilio?.medium ||
+                      product.precio.domicilio?.family) &&
+                    (product.precio.local?.small ||
+                      product.precio.local?.medium ||
+                      product.precio.local?.family)
+                }"
+              >
                 <button
                   *ngIf="
                     product.precio.domicilio?.small ||

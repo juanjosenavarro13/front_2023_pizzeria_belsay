@@ -43,10 +43,10 @@ export class CestaService {
   public addProduct(product: cestaProductModel, local: boolean): void {
     if (this.cesta?.local === null) this.cesta.local = local;
 
-    if (local !== this.cesta?.local) {
+    if (local !== this.cesta?.local && this.cesta?.local !== null) {
       $('#modalCesta').show();
     } else {
-      this.cesta.products.push(product);
+      this.cesta?.products.push(product);
       this.cesta.total = this.calculatedTotal();
       localStorage.setItem('cesta', JSON.stringify(this.cesta));
     }

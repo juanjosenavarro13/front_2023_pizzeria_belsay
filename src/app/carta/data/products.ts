@@ -1,4 +1,4 @@
-import { categories_type, product } from './carta.model';
+import { categories_type, product } from '../../models/carta.model';
 /**
  * productos
  */
@@ -227,4 +227,142 @@ export const products_data: product[] = [
     },
   },
   // hamburguesas
+  {
+    name: 'Carolina',
+    category: categories_type.Hamburguesas,
+    ingredientes: 'Carne, lechuga y tomate.',
+    precio: {
+      local: { small: 1.9 },
+    },
+  },
+  {
+    name: 'Montana',
+    category: categories_type.Hamburguesas,
+    ingredientes: '2 carnes, lechuga, tomate, huevo, queso y beicon.',
+    precio: {
+      local: { small: 3.3 },
+    },
+  },
+  {
+    name: 'Tejana',
+    category: categories_type.Hamburguesas,
+    ingredientes: 'Carne, lechuga, tomate, cebolla, beicon y salsa barbacoa.',
+    precio: {
+      local: { small: 2.5 },
+    },
+  },
+  {
+    name: 'Florida',
+    category: categories_type.Hamburguesas,
+    ingredientes: 'Carne, queso, lechuga y tomate.',
+    precio: {
+      local: { small: 2.1 },
+    },
+  },
+  {
+    name: 'California',
+    category: categories_type.Hamburguesas,
+    ingredientes: 'Carne, lechuga, tomate, cebolla y maíz.',
+    precio: {
+      local: { small: 2.1 },
+    },
+  },
+  {
+    name: 'De buey',
+    category: categories_type.Hamburguesas,
+    ingredientes: 'Queso cheddar, beicon y cebolla.',
+    precio: {
+      local: { small: 5.5 },
+    },
+  },
+  {
+    name: 'Indiana',
+    category: categories_type.Hamburguesas,
+    ingredientes: 'Carne, lechuga, tomate y huevo.',
+    precio: {
+      local: { small: 2.4 },
+    },
+  },
+  {
+    name: 'Nevada',
+    category: categories_type.Hamburguesas,
+    ingredientes: 'Pollo, lechuga y mahonesa.',
+    precio: {
+      local: { small: 2.9 },
+    },
+  },
+  {
+    name: 'Crunchy',
+    category: categories_type.Hamburguesas,
+    ingredientes:
+      'Carne de pollo rebozado crujiento, lechuga, tomate, mayonesa y barbacoa.',
+    precio: {
+      local: { small: 1.95 },
+    },
+  },
+  {
+    name: 'Arizona',
+    category: categories_type.Hamburguesas,
+    ingredientes: 'Carne, lechuga, tomate, queso, beicon y huevo.',
+    precio: {
+      local: { small: 2.9 },
+    },
+  },
+  // paninis
+  {
+    name: 'Atlántico',
+    category: categories_type.Paninis,
+    ingredientes: 'Panini base y jamón york.',
+    precio: {
+      local: { small: 2.3 },
+    },
+  },
+  {
+    name: 'Índico',
+    category: categories_type.Paninis,
+    ingredientes: 'Panini base, jamón serrano, champiñón y beicon.',
+    precio: {
+      local: { small: 3.25 },
+    },
+  },
+  {
+    name: 'Cantábrico',
+    category: categories_type.Paninis,
+    ingredientes: 'Panini base, gambas, anchoas y champiñón.',
+    precio: {
+      local: { small: 3.25 },
+    },
+  },
+  {
+    name: 'Pacífico',
+    category: categories_type.Paninis,
+    ingredientes: 'Panini base, alcachofa, champiñón y york.',
+    precio: {
+      local: { small: 3.25 },
+    },
+  },
+  {
+    name: 'Báltico',
+    category: categories_type.Paninis,
+    ingredientes: 'Panini base, salami, salchichas y york.',
+    precio: {
+      local: { small: 3.25 },
+    },
+  },
+  {
+    name: 'Maya',
+    category: categories_type.Paninis,
+    ingredientes: 'Panini base y mágica mezcla de quesos.',
+    precio: {
+      local: { small: 3.25 },
+    },
+  },
+  {
+    name: 'Mediterráneo',
+    category: categories_type.Paninis,
+    ingredientes: 'Panini base, atún y champiñón.',
+    precio: {
+      local: { small: 3.25 },
+    },
+  },
 ];

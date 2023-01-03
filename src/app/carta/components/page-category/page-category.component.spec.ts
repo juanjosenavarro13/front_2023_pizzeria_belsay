@@ -4,7 +4,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 
 import { PageCategoryComponent } from './page-category.component';
-import { categories_type } from '../../data/carta.model';
+import { categories_type } from '../../../models/carta.model';
 
 describe('PageCategoryComponent', () => {
   let component: PageCategoryComponent;

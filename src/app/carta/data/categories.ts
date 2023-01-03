@@ -1,4 +1,4 @@
-import { categories_type, category } from './carta.model';
+import { categories_type, category } from '../../models/carta.model';
 /**
  * categorias de productos
  */

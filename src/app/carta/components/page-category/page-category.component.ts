@@ -1,6 +1,6 @@
 import { cestaProductModel } from './../../../models/cesta.model';
 import { CestaService } from './../../../services/cesta.service';
-import { product } from './../../data/carta.model';
+import { product } from '../../../models/carta.model';
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { categories_data } from '../../data/categories';

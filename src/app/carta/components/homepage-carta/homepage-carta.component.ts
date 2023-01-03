@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { category } from '../../data/carta.model';
+import { category } from '../../../models/carta.model';
 import { categories_data } from '../../data/categories';
 
 /**
