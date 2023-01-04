@@ -534,4 +534,50 @@ export const products_data: product[] = [
       local: { small: 3.75 },
     },
   },
+  // hot dogs
+  {
+    name: 'Perrito caliente',
+    category: categories_type.Hot_dogs,
+    ingredientes: 'Pan y salsicha',
+    precio: {
+      local: { small: 1.9 },
+      domicilio: { small: 2.1 },
+    },
+  },
+  {
+    name: 'Perrito bel',
+    category: categories_type.Hot_dogs,
+    ingredientes: 'Queso, salsicha y beicon.',
+    precio: {
+      local: { small: 2.3 },
+      domicilio: { small: 2.5 },
+    },
+  },
+  {
+    name: 'Perrito say',
+    category: categories_type.Hot_dogs,
+    ingredientes: 'Tortilla francesa y salchica.',
+    precio: {
+      local: { small: 2.2 },
+      domicilio: { small: 2.4 },
+    },
+  },
+  {
+    name: 'Perrito completo',
+    category: categories_type.Hot_dogs,
+    ingredientes: 'Queso, salsicha, beicon y tortilla.',
+    precio: {
+      local: { small: 2.6 },
+      domicilio: { small: 2.75 },
+    },
+  },
+  {
+    name: 'Especial hot dog',
+    category: categories_type.Hot_dogs,
+    ingredientes: 'Salsicha, aros de cebolla, tomate y tortilla.',
+    precio: {
+      local: { small: 2.8 },
+      domicilio: { small: 3.1 },
+    },
+  },
 ];

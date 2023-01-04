@@ -29,14 +29,27 @@ export class BreadcrumbComponent {
    */
   constructor(private router: Router, private titleService: Title) {
     this.changeTitle();
-    this.currentRoute = this.splitRoute(this.router.url);
+    this.currentRoute = this.clearName(this.splitRoute(this.router.url));
     this.changeTitle(this.currentRoute[this.currentRoute.length - 1]);
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
-        this.currentRoute = this.splitRoute(event.url);
+        this.currentRoute = this.clearName(this.splitRoute(event.url));
         this.changeTitle(this.currentRoute[this.currentRoute.length - 1]);
       }
     });
+  }
+
+  /**
+   * limpiar espacios %20 de los nombres
+   * @param routes
+   * @returns
+   */
+  private clearName(routes: string[]): string[] {
+    const routesClear: string[] = [];
+    routes.forEach((el) => {
+      routesClear.push(el.replace(/%20/g, ' '));
+    });
+    return routesClear;
   }
 
   /**
@@ -69,6 +82,7 @@ export class BreadcrumbComponent {
    */
   private changeTitle(title?: string): void {
     if (typeof title !== 'string') title = 'Inicio';
+    title = title.replace(/%20/g, ' ');
     this.titleService.setTitle(environment.titleApp + ' | ' + title);
   }
 }
