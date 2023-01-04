@@ -580,4 +580,22 @@ export const products_data: product[] = [
       domicilio: { small: 3.1 },
     },
   },
+  {
+    name: 'Perrito picantón',
+    category: categories_type.Hot_dogs,
+    ingredientes: 'Salsicha, aros de cebolla y salsa brava.',
+    precio: {
+      local: { small: 2.3 },
+      domicilio: { small: 2.6 },
+    },
+  },
+  {
+    name: 'Perrito sabroson',
+    category: categories_type.Hot_dogs,
+    ingredientes: 'Salsicha, beicon, cebolla y salsa barbacoa.',
+    precio: {
+      local: { small: 2.5 },
+      domicilio: { small: 2.75 },
+    },
+  },
 ];

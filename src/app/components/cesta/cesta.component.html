@@ -30,7 +30,7 @@
             <td>{{ product.price | precio }}</td>
             <td role="button" (click)="deleteItem(index)">X</td>
           </tr>
-          <tr *ngIf="!cesta?.local">
+          <tr *ngIf="!cesta?.local && false">
             <th scope="row text-success">Reparto a domicilio</th>
             <td></td>
             <td>{{ 1.5 | precio }}</td>
