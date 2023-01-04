@@ -789,6 +789,262 @@ const products: product[] = [
       domicilio: { small: 2.9 },
     },
   },
+  // patatas
+  {
+    name: 'Golden',
+    category: categories_type.Patatas,
+    ingredientes: 'Patatas Golden',
+    precio: {
+      local: { small: 2.2 },
+      domicilio: { small: 2.3 },
+    },
+  },
+  {
+    name: 'Normales',
+    category: categories_type.Patatas,
+    ingredientes: 'Patatas normales.',
+    precio: {
+      local: { small: 1.3, medium: 1.5 },
+      domicilio: { small: 1.5, medium: 1.8 },
+    },
+  },
+  {
+    name: 'Con queso',
+    category: categories_type.Patatas,
+    ingredientes: 'Patatas normales con queso.',
+    precio: {
+      local: { small: 2.75 },
+      domicilio: { small: 2.75 },
+    },
+  },
+  {
+    name: 'Con queso, beicon y ternera',
+    category: categories_type.Patatas,
+    ingredientes: 'Patatas normales con queso, beicon y ternera.',
+    precio: {
+      local: { small: 3.6 },
+      domicilio: { small: 3.6 },
+    },
+  },
+  // nachos
+  {
+    name: 'Con queso',
+    category: categories_type.Nachos,
+    ingredientes: 'Nachos con queso.',
+    precio: {
+      local: { small: 2.75 },
+      domicilio: { small: 2.75 },
+    },
+  },
+  {
+    name: 'Con queso, ternera y beicon',
+    category: categories_type.Nachos,
+    ingredientes: 'Nachos con queso.',
+    precio: {
+      local: { small: 3.85 },
+      domicilio: { small: 3.85 },
+    },
+  },
+  {
+    name: 'Con queso cheddar y gouda',
+    category: categories_type.Nachos,
+    ingredientes: 'Nachos con queso cheddar y gouda.',
+    precio: {
+      local: { small: 4.1 },
+      domicilio: { small: 4.1 },
+    },
+  },
+  // pollos
+  {
+    name: 'Nuggets 6 Unidades',
+    category: categories_type.Pollos,
+    ingredientes: 'Nuggets con salsa barbacoa',
+    precio: {
+      local: { small: 2.95 },
+      domicilio: { small: 3.2 },
+    },
+  },
+  {
+    name: 'Alitas 6 Unidades',
+    category: categories_type.Pollos,
+    ingredientes: 'Alitas con salsa barbacoa o brava.',
+    precio: {
+      local: { small: 3.6 },
+      domicilio: { small: 3.8 },
+    },
+  },
+  // postres
+  {
+    name: 'Helados',
+    category: categories_type.Postres,
+    ingredientes: 'CONSULTAR',
+    precio: {
+      local: { small: 1 },
+      domicilio: { small: 1 },
+    },
+  },
+  {
+    name: 'Pasteleria',
+    category: categories_type.Postres,
+    ingredientes: 'CONSULTAR',
+    precio: {
+      local: { small: 1 },
+      domicilio: { small: 1 },
+    },
+  },
+  // ensaladas
+  {
+    name: 'De la huerta',
+    category: categories_type.Ensaladas,
+    ingredientes: 'Lechuga, tomate y cebolla.',
+    precio: {
+      local: { small: 2.65 },
+      domicilio: { small: 2.9 },
+    },
+  },
+  {
+    name: 'Mixta',
+    category: categories_type.Ensaladas,
+    ingredientes:
+      'Lechuga, tomate, cebolla, huevo, atún, aceitunas y espárragos.',
+    precio: {
+      local: { small: 3.5 },
+      domicilio: { small: 3.8 },
+    },
+  },
+  {
+    name: 'Parisina',
+    category: categories_type.Ensaladas,
+    ingredientes:
+      'Lechuga, tomate, pollo, york, queso, zanahoria, huevo y salsa rosa o roquefort.',
+    precio: {
+      local: { small: 3.65 },
+      domicilio: { small: 4.05 },
+    },
+  },
+  {
+    name: 'Niçoise',
+    category: categories_type.Ensaladas,
+    ingredientes:
+      'Lechuga, tomate, atún, york, queso, espárrago, palmitos y salsa rosa o roquefort.',
+    precio: {
+      local: { small: 3.65 },
+      domicilio: { small: 4.05 },
+    },
+  },
+  {
+    name: 'Del mar',
+    category: categories_type.Ensaladas,
+    ingredientes: 'Lechuga, gambas, rabanitos de mar y salsa rosa.',
+    precio: {
+      local: { small: 3.65 },
+      domicilio: { small: 4.05 },
+    },
+  },
+  {
+    name: 'Tropical',
+    category: categories_type.Ensaladas,
+    ingredientes:
+      'Lechuga, tomate, gambas, brotes de soja, mazorquitas, piña, delicias de mar y salsa rosa.',
+    precio: {
+      local: { small: 3.65 },
+      domicilio: { small: 4.06 },
+    },
+  },
+  {
+    name: 'De pimientos',
+    category: categories_type.Ensaladas,
+    ingredientes:
+      'Pimientos rojos, rabanitos de mar, cebollita, mejillones, gambas y aceitunas verdes.',
+    precio: {
+      local: { small: 3.95 },
+      domicilio: { small: 4.1 },
+    },
+  },
+  {
+    name: 'Italiana',
+    category: categories_type.Ensaladas,
+    ingredientes: 'Pasta, jamón cocido, tomate, aceitunas, tortilla y queso.',
+    precio: {
+      local: { small: 3.95 },
+      domicilio: { small: 4.1 },
+    },
+  },
+  {
+    name: 'Burguesa',
+    category: categories_type.Ensaladas,
+    ingredientes:
+      'Lechuga, piña, queso fresco, jamón york y un suave toque de mahonesa.',
+    precio: {
+      local: { small: 3.95 },
+      domicilio: { small: 4.1 },
+    },
+  },
+
+  {
+    name: 'Cesar',
+    category: categories_type.Ensaladas,
+    ingredientes: 'Lechuga, york, pollo y picatostes con salsa cesar.',
+    precio: {
+      local: { small: 3.95 },
+      domicilio: { small: 4.1 },
+    },
+  },
+  // refrescos
+  {
+    name: 'Lata cocacola',
+    category: categories_type.Bebidas,
+    ingredientes: 'Lata refresco',
+    precio: {
+      local: { small: 1.3 },
+      domicilio: { small: 1.45 },
+    },
+  },
+  {
+    name: 'Lata fanta',
+    category: categories_type.Bebidas,
+    ingredientes: 'Lata refresco',
+    precio: {
+      local: { small: 1.3 },
+      domicilio: { small: 1.45 },
+    },
+  },
+  {
+    name: 'Zumo, Batidos',
+    category: categories_type.Bebidas,
+    ingredientes: 'Zumo, Batidos',
+    precio: {
+      local: { small: 1.3 },
+      domicilio: { small: 1.4 },
+    },
+  },
+  {
+    name: 'Agua mineral',
+    category: categories_type.Bebidas,
+    ingredientes: 'Agua mineral',
+    precio: {
+      local: { small: 1 },
+      domicilio: { small: 1.1 },
+    },
+  },
+  {
+    name: 'Cerveza',
+    category: categories_type.Bebidas,
+    ingredientes: 'Cerveza',
+    precio: {
+      local: { small: 1.3 },
+      domicilio: { small: 1.45 },
+    },
+  },
+  {
+    name: 'Tinto verano',
+    category: categories_type.Bebidas,
+    ingredientes: 'Tinto verano.',
+    precio: {
+      local: { small: 1.2 },
+      domicilio: { small: 1.3 },
+    },
+  },
 ];
 
 function compare(a: product, b: product) {

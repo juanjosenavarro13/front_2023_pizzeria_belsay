@@ -44,6 +44,10 @@ export const categories_data: category[] = [
     img: '../../../assets/carta/' + categories_type.Pollos + '.png',
   },
   {
+    name: categories_type.Postres,
+    img: '../../../assets/carta/' + categories_type.Postres + '.png',
+  },
+  {
     name: categories_type.Ensaladas,
     img: '../../../assets/carta/' + categories_type.Ensaladas + '.png',
   },

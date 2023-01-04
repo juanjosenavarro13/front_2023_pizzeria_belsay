@@ -1,3 +1,3 @@
-- intentar pasar toda la cesta a observables
-- agregar boton de llamar en la cesta si es para domicilio
+
+- agregar boton de llamar en la cesta si es para domicilio (enviar por wasa todo lo que tenemos en la cesta por mensaje)
 - agregar boton para vaciar la cesta
