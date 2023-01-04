@@ -30,3 +30,11 @@ jobs:
     - run: npm run lint:ci
     - run: npm run test:ci
     - run: npm run build
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.3.3
+      with:
+        server: ${{FTP_SERVER}}
+        username: ${{FTP_USER}}
+        password: ${{FTP_PASSWORD}}
+        server-dir: /web/p/
+        state-name: sync-state.json
