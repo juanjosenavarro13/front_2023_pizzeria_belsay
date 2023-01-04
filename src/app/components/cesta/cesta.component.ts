@@ -27,6 +27,18 @@ export class CestaComponent {
   };
 
   /**
+   * reiniciar cesta
+   */
+  public resetCesta() {
+    this.CestaService.resetCesta();
+    this.cesta = {
+      products: [],
+      local: null,
+      total: 0,
+    };
+  }
+
+  /**
    * delete item
    * @param id
    */
@@ -34,7 +46,7 @@ export class CestaComponent {
     this.cesta = this.CestaService.deleteProduct(id);
   }
 
-  public send(reparto: string, direccion: string) {
+  public send(reparto: string, direccion: string, comentarios: string) {
     const salto = '%0A';
     // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
     const cesta: cesta = JSON.parse(localStorage.getItem('cesta')!);
@@ -52,10 +64,14 @@ export class CestaComponent {
     text += salto;
 
     cesta?.products.forEach((el) => {
-      text += `${el.name} [${el.tam}] | ${el.price}€ ${salto}`;
+      text += `-${el.name.split(':')[0]} ${el.tam}: ${
+        el.name.split(':')[1]
+      } | ${el.price}€ ${salto}`;
     });
 
-    text += `*Total:* ${cesta?.total}€`;
+    text += `*Total: ${cesta?.total}€*`;
+
+    if (comentarios !== '') text += salto + `Comentarios: ${comentarios}`;
 
     const url = `https://api.whatsapp.com/send?phone=34${environment.infoApp.phone2}&text=${text}`;
     window.open(url, '', '');

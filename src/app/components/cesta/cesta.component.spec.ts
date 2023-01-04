@@ -29,8 +29,8 @@ describe('cestaComponent', () => {
   });
 
   it('send', () => {
-    component.send('local', 'hornilla 5');
-    component.send('domicilio', '');
+    component.send('local', 'hornilla 5', '');
+    component.send('domicilio', '', 'comentario');
 
     expect(1).toEqual(1);
   });

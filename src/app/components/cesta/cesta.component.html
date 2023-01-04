@@ -54,7 +54,9 @@
         >
           Enviar pedido
         </button>
-        <a href="#" class="btn btn-secondary">Borrar cesta</a>
+        <a role="button" (click)="resetCesta()" class="btn btn-secondary"
+          >Borrar cesta</a
+        >
       </div>
     </div>
     <div *ngIf="cesta?.products?.length === 0">
@@ -111,9 +113,21 @@
               required
               class="form-control"
               id="floatingInput"
-              placeholder="C/ ejemplo numero 99"
             />
             <label for="floatingInput">Direccion a enviar:</label>
+          </div>
+          <div class="form-floating mb-3">
+            <textarea
+              name="comentarios"
+              ngModel
+              #comentarios
+              class="form-control"
+              placeholder="Leave a comment here"
+              id="floatingTextarea"
+            ></textarea>
+            <label for="floatingInput"
+              >Comentarios (ej. haburguesa sin queso):</label
+            >
           </div>
         </form>
 
@@ -127,7 +141,7 @@
           [disabled]="formDomicilio.invalid"
           type="button"
           class="btn btn-success"
-          (click)="send(domicilio.value, direccion.value)"
+          (click)="send(domicilio.value, direccion.value, comentarios.value)"
         >
           Enviar
         </button>

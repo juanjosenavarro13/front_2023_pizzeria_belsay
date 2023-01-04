@@ -814,7 +814,6 @@ const products: product[] = [
     ingredientes: 'Patatas normales con queso.',
     precio: {
       local: { small: 2.75 },
-      domicilio: { small: 2.75 },
     },
   },
   {
@@ -823,7 +822,6 @@ const products: product[] = [
     ingredientes: 'Patatas normales con queso, beicon y ternera.',
     precio: {
       local: { small: 3.6 },
-      domicilio: { small: 3.6 },
     },
   },
   // nachos
@@ -833,7 +831,6 @@ const products: product[] = [
     ingredientes: 'Nachos con queso.',
     precio: {
       local: { small: 2.75 },
-      domicilio: { small: 2.75 },
     },
   },
   {
@@ -842,7 +839,6 @@ const products: product[] = [
     ingredientes: 'Nachos con queso.',
     precio: {
       local: { small: 3.85 },
-      domicilio: { small: 3.85 },
     },
   },
   {
@@ -851,7 +847,6 @@ const products: product[] = [
     ingredientes: 'Nachos con queso cheddar y gouda.',
     precio: {
       local: { small: 4.1 },
-      domicilio: { small: 4.1 },
     },
   },
   // pollos
@@ -861,7 +856,6 @@ const products: product[] = [
     ingredientes: 'Nuggets con salsa barbacoa',
     precio: {
       local: { small: 2.95 },
-      domicilio: { small: 3.2 },
     },
   },
   {
@@ -870,7 +864,6 @@ const products: product[] = [
     ingredientes: 'Alitas con salsa barbacoa o brava.',
     precio: {
       local: { small: 3.6 },
-      domicilio: { small: 3.8 },
     },
   },
   // postres
