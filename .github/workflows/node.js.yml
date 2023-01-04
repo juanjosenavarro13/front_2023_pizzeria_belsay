@@ -39,6 +39,3 @@ jobs:
         local-dir: ./dist/front_2023_pizzeria_belsay/
         server-dir: /web/
         state-name: sync-state.json
-        exclude: |
-          **/.htaccess
-        dangerous-clean-slate: true
