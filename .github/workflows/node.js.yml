@@ -37,6 +37,6 @@ jobs:
         username: ${{ secrets.FTP_USER }}
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./dist/front_2023_pizzeria_belsay/
-        server-dir: /web/p/
+        server-dir: /web/
         state-name: sync-state.json
         dangerous-clean-slate: true
