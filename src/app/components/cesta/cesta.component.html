@@ -44,9 +44,94 @@
           </tr>
         </tbody>
       </table>
+      <div class="btn-group">
+        <button
+          *ngIf="!cesta?.local"
+          type="button"
+          class="btn btn-success"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          Enviar pedido
+        </button>
+        <a href="#" class="btn btn-secondary">Borrar cesta</a>
+      </div>
     </div>
     <div *ngIf="cesta?.products?.length === 0">
       <h2 class="text-center text-success display-2"><b>Cesta vacía</b></h2>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">
+          Informacion del pedido
+        </h1>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <!-- body -->
+        <form #formDomicilio="ngForm">
+          <div class="form-floating mb-3">
+            <select
+              ngModel
+              name="domicilio"
+              #domicilio
+              required
+              class="form-select"
+              id="floatingSelect"
+            >
+              <option value="domicilio">Recibir pedido en casa</option>
+              <option value="local">Ir a recoger el pedido al local</option>
+            </select>
+            <label for="floatingSelect">Opcion del pedido:</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input
+              [disabled]="domicilio.value !== 'domicilio'"
+              type="email"
+              name="direccion"
+              ngModel
+              #direccion
+              required
+              class="form-control"
+              id="floatingInput"
+              placeholder="C/ ejemplo numero 99"
+            />
+            <label for="floatingInput">Direccion a enviar:</label>
+          </div>
+        </form>
+
+        <!-- end body -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Cerrar
+        </button>
+        <button
+          [disabled]="formDomicilio.invalid"
+          type="button"
+          class="btn btn-success"
+          (click)="send(domicilio.value, direccion.value)"
+        >
+          Enviar
+        </button>
+      </div>
     </div>
   </div>
 </div>

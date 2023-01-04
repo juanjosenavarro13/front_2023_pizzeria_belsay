@@ -1,3 +1,4 @@
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CestaComponent } from '../cesta/cesta.component';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
@@ -11,6 +12,7 @@ describe('MainMenuComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [MainMenuComponent, CestaComponent],
+      imports: [FormsModule, ReactiveFormsModule],
       schemas: [NO_ERRORS_SCHEMA],
     }).compileComponents();
 

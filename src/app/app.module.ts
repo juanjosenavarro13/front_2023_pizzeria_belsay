@@ -14,6 +14,7 @@ import { MainFooterComponent } from './components/main-footer/main-footer.compon
 import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
 import { PageLocationComponent } from './components/page-location/page-location.component';
 import { ModalCestaComponent } from './components/modal-cesta/modal-cesta.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,13 @@ import { ModalCestaComponent } from './components/modal-cesta/modal-cesta.compon
     PageLocationComponent,
     ModalCestaComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, SharedModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    SharedModule,
+    FormsModule,
+    ReactiveFormsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

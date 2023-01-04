@@ -86,9 +86,9 @@ export class CestaService {
       total += product.price;
     });
 
-    if (!this.cesta?.local) {
-      total += 1.5;
-    }
+    // if (!this.cesta?.local) {
+    //   total += 1.5;
+    // }
 
     return Number(total.toFixed(2));
   }

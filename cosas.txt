@@ -1,3 +1,10 @@
 
 - agregar boton de llamar en la cesta si es para domicilio (enviar por wasa todo lo que tenemos en la cesta por mensaje)
+- agregar opcion (si es a domicilio) recoger en local o envio a domicilio
 - agregar boton para vaciar la cesta
+- cambiar color del borde de los inputs
+
+https://api.whatsapp.com/send?phone=34654206387&text=mensaje/n\nhola
+
+salto de linea = %0A
+
