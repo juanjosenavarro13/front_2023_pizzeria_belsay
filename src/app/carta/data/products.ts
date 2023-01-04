@@ -1100,7 +1100,7 @@ const products: product[] = [
     },
   },
   {
-    name: 'Para dos EXTRA 1',
+    name: 'Para dos EXTRA (patatas)',
     category: categories_type.Menus,
     ingredientes:
       'Cesta menu con pizza mediana (3 ingredientes) 2 refrescos medianos y dos patatas medianas o una golden',
@@ -1110,7 +1110,7 @@ const products: product[] = [
     },
   },
   {
-    name: 'Para dos EXTRA 2',
+    name: 'Para dos EXTRA (ensaladas)',
     category: categories_type.Menus,
     ingredientes:
       'Cesta menu con pizza mediana (3 ingredientes) 2 refrescos medianos y ensalada (niçoise, parisina, tropical, del mar, de pimiento o italiana)',
