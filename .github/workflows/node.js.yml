@@ -30,13 +30,13 @@ jobs:
     - run: npm run lint:ci
     - run: npm run test:ci
     - run: npm run build
-    # - name: 📂 Sync files
-    #   uses: SamKirkland/FTP-Deploy-Action@4.3.3
-    #   with:
-    #     server: ${{ secrets.FTP_SERVER }}
-    #     username: ${{ secrets.FTP_USER }}
-    #     password: ${{ secrets.FTP_PASSWORD }}
-    #     local-dir: ./dist/front_2023_pizzeria_belsay/
-    #     server-dir: /web/
-    #     state-name: sync-state.json
-    #     dangerous-clean-slate: true
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.3.3
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USER }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: ./dist/front_2023_pizzeria_belsay/
+        server-dir: /web/p/
+        state-name: sync-state.json
+        dangerous-clean-slate: true
