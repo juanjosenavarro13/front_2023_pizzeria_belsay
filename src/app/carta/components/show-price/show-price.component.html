@@ -1,0 +1,78 @@
+<div class="row">
+  <div
+    class="text-center"
+    [ngClass]="{
+      'col-12':
+        (product.precio.local?.small ||
+          product.precio.local?.medium ||
+          product.precio.local?.family) &&
+        !product.precio.domicilio?.small &&
+        !product.precio.domicilio?.medium &&
+        !product.precio.domicilio?.family,
+      'col-6':
+        (product.precio.local?.small ||
+          product.precio.local?.medium ||
+          product.precio.local?.family) &&
+        (product.precio.domicilio?.small ||
+          product.precio.domicilio?.medium ||
+          product.precio.domicilio?.family)
+    }"
+  >
+    <p
+      *ngIf="
+        product.precio.local?.small ||
+        product.precio.local?.medium ||
+        product.precio.local?.family
+      "
+    >
+      <b class="text-success">Local:</b>
+    </p>
+    <p *ngIf="product.precio.local?.small">
+      Pequeña: {{ product.precio.local?.small | precio }}
+    </p>
+    <p *ngIf="product.precio.local?.medium">
+      Mediana: {{ product.precio.local?.medium | precio }}
+    </p>
+    <p *ngIf="product.precio.local?.family">
+      Familiar: {{ product.precio.local?.family | precio }}
+    </p>
+  </div>
+  <div
+    class="text-center"
+    [ngClass]="{
+      'col-12':
+        (product.precio.domicilio?.small ||
+          product.precio.domicilio?.medium ||
+          product.precio.domicilio?.family) &&
+        !product.precio.local?.small &&
+        !product.precio.local?.medium &&
+        !product.precio.local?.family,
+      'col-6':
+        (product.precio.domicilio?.small ||
+          product.precio.domicilio?.medium ||
+          product.precio.domicilio?.family) &&
+        (product.precio.local?.small ||
+          product.precio.local?.medium ||
+          product.precio.local?.family)
+    }"
+  >
+    <p
+      *ngIf="
+        product.precio.domicilio?.small ||
+        product.precio.domicilio?.medium ||
+        product.precio.domicilio?.family
+      "
+    >
+      <b class="text-success">Domicilio:</b>
+    </p>
+    <p *ngIf="product.precio.domicilio?.small">
+      Pequeña: {{ product.precio.domicilio?.small | precio }}
+    </p>
+    <p *ngIf="product.precio.domicilio?.medium">
+      Mediana: {{ product.precio.domicilio?.medium | precio }}
+    </p>
+    <p *ngIf="product.precio.domicilio?.family">
+      Familiar: {{ product.precio.domicilio?.family | precio }}
+    </p>
+  </div>
+</div>

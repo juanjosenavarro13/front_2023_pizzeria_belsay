@@ -1,0 +1,27 @@
+<div class="card">
+  <div class="card-body">
+    <h2 class="display-2 text-center text-success text-uppercase">
+      {{ category }}
+    </h2>
+    <div class="row">
+      <div class="col-sm-12 col-lg-6 mt-2" *ngFor="let product of products">
+        <div class="card border-success">
+          <div class="card-header text-center text-success text-uppercase">
+            <b>{{ product.name }}</b>
+          </div>
+          <div class="card-body">
+            <p class="card-text">
+              <b class="text-success">Ingredientes: </b
+              >{{ product.ingredientes }}
+            </p>
+            <app-show-price [product]="product"></app-show-price>
+            <app-add-buttons
+              [product]="product"
+              [category]="category"
+            ></app-add-buttons>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

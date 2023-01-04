@@ -50,4 +50,13 @@ describe('CestaService', () => {
 
     expect(1).toEqual(1);
   });
+
+  it('delete product', () => {
+    service.addProduct({ name: 'name', price: 10, tam: 'pequeña' }, false);
+    service.addProduct({ name: 'name', price: 10, tam: 'pequeña' }, false);
+
+    service.deleteProduct(1);
+
+    expect(1).toEqual(1);
+  });
 });

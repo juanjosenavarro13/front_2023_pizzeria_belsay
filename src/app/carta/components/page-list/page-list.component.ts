@@ -1,5 +1,3 @@
-import { cestaProductModel } from './../../../models/cesta.model';
-import { CestaService } from './../../../services/cesta.service';
 import { product } from '../../../models/carta.model';
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
@@ -10,11 +8,11 @@ import { products_data } from '../../data/products';
  * pagina de categorias
  */
 @Component({
-  selector: 'app-page-category',
-  templateUrl: './page-category.component.html',
-  styleUrls: ['./page-category.component.scss'],
+  selector: 'app-page-list',
+  templateUrl: './page-list.component.html',
+  styleUrls: ['./page-list.component.scss'],
 })
-export class PageCategoryComponent {
+export class PageListComponent {
   /**
    * categorias
    */
@@ -41,11 +39,7 @@ export class PageCategoryComponent {
    * @param router
    * @param CestaService
    */
-  constructor(
-    private activatedRoute: ActivatedRoute,
-    private router: Router,
-    private CestaService: CestaService
-  ) {
+  constructor(private activatedRoute: ActivatedRoute, private router: Router) {
     if (!this.validatedCategory(this.category)) this.router.navigate(['/']);
     this.products = this.getProducts();
   }
@@ -70,23 +64,5 @@ export class PageCategoryComponent {
     return this.products_data.filter(
       (product) => product.category === this.category
     );
-  }
-
-  /**
-   * agregar a la cesta
-   * @param name
-   * @param tam
-   * @param price
-   * @param local
-   */
-  public addCart(name: string, tam: string, price = 0, local = true) {
-    if (price !== 0) {
-      const product: cestaProductModel = {
-        name,
-        tam,
-        price,
-      };
-      this.CestaService.addProduct(product, local);
-    }
   }
 }

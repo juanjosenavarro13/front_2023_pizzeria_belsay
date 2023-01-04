@@ -1,24 +1,24 @@
-import { CestaService } from './../../../services/cesta.service';
+import { CestaService } from '../../../services/cesta.service';
 import { NO_ERRORS_SCHEMA } from '@angular/core';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 
-import { PageCategoryComponent } from './page-category.component';
+import { PageListComponent } from './page-list.component';
 import { categories_type } from '../../../models/carta.model';
 
 describe('PageCategoryComponent', () => {
-  let component: PageCategoryComponent;
-  let fixture: ComponentFixture<PageCategoryComponent>;
+  let component: PageListComponent;
+  let fixture: ComponentFixture<PageListComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [PageCategoryComponent],
+      declarations: [PageListComponent],
       imports: [RouterTestingModule],
       providers: [CestaService],
       schemas: [NO_ERRORS_SCHEMA],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(PageCategoryComponent);
+    fixture = TestBed.createComponent(PageListComponent);
     component = fixture.componentInstance;
     component.category = categories_type.Pizzas;
     fixture.detectChanges();
@@ -26,13 +26,6 @@ describe('PageCategoryComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
-  });
-
-  it('addcart', () => {
-    component.addCart('nombre', 'pequeña', 5, false);
-    component.addCart('nombre', 'pequeña');
-
-    expect(1).toEqual(1);
   });
 
   it('should validate the category name', () => {
