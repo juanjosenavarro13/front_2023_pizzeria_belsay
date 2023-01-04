@@ -1,5 +1,5 @@
 import { CestaService } from './services/cesta.service';
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { cesta } from './models/cesta.model';
 
 /**
@@ -10,7 +10,7 @@ import { cesta } from './models/cesta.model';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   /**
    * cesta
    */
@@ -35,28 +35,6 @@ export class AppComponent implements OnInit {
   constructor(private CestaService: CestaService) {
     this.initLoading();
     this.getCesta();
-  }
-
-  /**
-   * init
-   */
-  ngOnInit() {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const script = (document as any).createElement('script');
-    script.src =
-      'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js';
-
-    script.onload = () => {
-      setTimeout(() => {
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        (window as any).adsbygoogle.push({
-          google_ad_client: 'ca-pub-4234128193055516',
-          enable_page_level_ads: true,
-        });
-      }, 200);
-    };
-
-    document.body.appendChild(script);
   }
 
   /**
