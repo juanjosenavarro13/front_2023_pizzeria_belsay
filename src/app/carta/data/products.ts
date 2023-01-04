@@ -365,4 +365,173 @@ export const products_data: product[] = [
       local: { small: 3.25 },
     },
   },
+  // bocatas
+  {
+    name: 'Catalán',
+    category: categories_type.Bocatas,
+    ingredientes: 'Jamón serrano, tomate y aceite.',
+    precio: {
+      local: { small: 3.25 },
+    },
+  },
+  {
+    name: 'Manchego',
+    category: categories_type.Bocatas,
+    ingredientes: 'Anchoa, queso y pimiento.',
+    precio: {
+      local: { small: 3.45 },
+    },
+  },
+  {
+    name: 'Vasco',
+    category: categories_type.Bocatas,
+    ingredientes: 'Lomo, beicon, salsa barbacoa y tomate natural.',
+    precio: {
+      local: { small: 3.45 },
+    },
+  },
+  {
+    name: 'Andaluz de tortilla',
+    category: categories_type.Bocatas,
+    ingredientes: 'Tortilla o lomo.',
+    precio: {
+      local: { small: 2.9 },
+    },
+  },
+  {
+    name: 'Zamorano',
+    category: categories_type.Bocatas,
+    ingredientes: 'Lomo mechado, cebolla frita y salsa al whisky.',
+    precio: {
+      local: { small: 3.45 },
+    },
+  },
+  {
+    name: 'Castellano',
+    category: categories_type.Bocatas,
+    ingredientes: 'Lomo, beicon y cebolla.',
+    precio: {
+      local: { small: 3.45 },
+    },
+  },
+  {
+    name: 'Aragonés',
+    category: categories_type.Bocatas,
+    ingredientes: 'Jamón york y queso.',
+    precio: {
+      local: { small: 2.9 },
+    },
+  },
+  {
+    name: 'Gallego',
+    category: categories_type.Bocatas,
+    ingredientes: 'Atún, huevo, pimiento y mahonesa.',
+    precio: {
+      local: { small: 3.45 },
+    },
+  },
+  {
+    name: 'Serranito',
+    category: categories_type.Bocatas,
+    ingredientes: 'Lomo, jamón serrano y pimiento.',
+    precio: {
+      local: { small: 3.45 },
+    },
+  },
+  {
+    name: 'Tortilla de patatas',
+    category: categories_type.Bocatas,
+    ingredientes: 'Tortilla de patatas con beicon o pimiento morrón.',
+    precio: {
+      local: { small: 3.3 },
+    },
+  },
+  {
+    name: 'Levantino',
+    category: categories_type.Bocatas,
+    ingredientes: 'Pechuga de pollo, lechuga, tomate y mahonesa.',
+    precio: {
+      local: { small: 3.5 },
+    },
+  },
+  {
+    name: 'Caribeño',
+    category: categories_type.Bocatas,
+    ingredientes: 'Palometa ahumada, roquefort o queso fresco.',
+    precio: {
+      local: { small: 3.75 },
+    },
+  },
+  {
+    name: 'Asturiano',
+    category: categories_type.Bocatas,
+    ingredientes: 'Beicon y queso',
+    precio: {
+      local: { small: 3.2 },
+    },
+  },
+  {
+    name: 'Murciano',
+    category: categories_type.Bocatas,
+    ingredientes: 'Lechuga, tomate, huevo, mahonesa, espárrago y queso fresco.',
+    precio: {
+      local: { small: 3.5 },
+    },
+  },
+  {
+    name: 'Extremeño',
+    category: categories_type.Bocatas,
+    ingredientes: 'Beicon, escalope de pollo y queso fundido.',
+    precio: {
+      local: { small: 3.75 },
+    },
+  },
+  {
+    name: 'Riojano',
+    category: categories_type.Bocatas,
+    ingredientes: 'Lomo y queso fundido',
+    precio: {
+      local: { small: 3.3 },
+    },
+  },
+  {
+    name: 'Frankfurt',
+    category: categories_type.Bocatas,
+    ingredientes: 'Salsichas, lechuga, tomate y mahonesa.',
+    precio: {
+      local: { small: 3.45 },
+    },
+  },
+  {
+    name: 'Segoviano',
+    category: categories_type.Bocatas,
+    ingredientes: 'Lomo, jamón y salsa verde.',
+    precio: {
+      local: { small: 3.45 },
+    },
+  },
+  {
+    name: 'Fried burguer',
+    category: categories_type.Bocatas,
+    ingredientes: 'Hamburguesa frita con salsa barbacoa y cebolla',
+    precio: {
+      local: { small: 3.3 },
+    },
+  },
+  {
+    name: 'Marinero',
+    category: categories_type.Bocatas,
+    ingredientes: 'Lechuga, tomate, atún, rabanitos de mar y mahonesa.',
+    precio: {
+      local: { small: 3.45 },
+    },
+  },
+  {
+    name: 'Sanluqueño',
+    category: categories_type.Bocatas,
+    ingredientes: 'Gambas a la plancha en salsa ali-oli.',
+    precio: {
+      local: { small: 3.75 },
+    },
+  },
 ];
