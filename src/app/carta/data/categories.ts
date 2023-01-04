@@ -4,6 +4,10 @@ import { categories_type, category } from '../../models/carta.model';
  */
 export const categories_data: category[] = [
   {
+    name: categories_type.Menus,
+    img: '../../../assets/carta/' + categories_type.Menus + '.png',
+  },
+  {
     name: categories_type.Pizzas,
     img: '../../../assets/carta/' + categories_type.Pizzas + '.png',
   },

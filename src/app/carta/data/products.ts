@@ -1038,6 +1038,87 @@ const products: product[] = [
       domicilio: { small: 1.3 },
     },
   },
+  // menus
+  {
+    name: 'infantil',
+    category: categories_type.Menus,
+    ingredientes:
+      'Cesta menu con hamburguesa carolina, patatas medianas y refresco 33cl + postre (tarrina helado)',
+    precio: {
+      local: { small: 4.6 },
+      domicilio: { small: 5 },
+    },
+  },
+  {
+    name: 'Burguelandia',
+    category: categories_type.Menus,
+    ingredientes:
+      'Cesta menu con hamburguesa arizona o nevada, patatas medianas y refresco 33cl',
+    precio: {
+      local: { small: 4.6 },
+      domicilio: { small: 5.2 },
+    },
+  },
+  {
+    name: 'Bocamix',
+    category: categories_type.Menus,
+    ingredientes:
+      'Cesta menu con bocata a elegir, patatas medianas y refresco 33cl',
+    precio: {
+      local: { small: 5 },
+      domicilio: { small: 5.5 },
+    },
+  },
+  {
+    name: 'Para dos',
+    category: categories_type.Menus,
+    ingredientes:
+      'Cesta menu con pizza mediana (3 ingredientes) 2 refrescos medianos y ensalada de la huerta',
+    precio: {
+      local: { small: 13 },
+      domicilio: { small: 14 },
+    },
+  },
+  {
+    name: 'Burguegolden',
+    category: categories_type.Menus,
+    ingredientes:
+      'Cesta menu con hamburguesa arizona o nevada, patatas GOLDEN y refresco 33cl',
+    precio: {
+      local: { small: 5.2 },
+      domicilio: { small: 5.8 },
+    },
+  },
+  {
+    name: 'Bocagolden',
+    category: categories_type.Menus,
+    ingredientes:
+      'Cesta menu con bocata a elegir, patatas GOLDEN y refresco 33cl',
+    precio: {
+      local: { small: 5.6 },
+      domicilio: { small: 6.1 },
+    },
+  },
+  {
+    name: 'Para dos EXTRA 1',
+    category: categories_type.Menus,
+    ingredientes:
+      'Cesta menu con pizza mediana (3 ingredientes) 2 refrescos medianos y dos patatas medianas o una golden',
+    precio: {
+      local: { small: 14.05 },
+      domicilio: { small: 15.05 },
+    },
+  },
+  {
+    name: 'Para dos EXTRA 2',
+    category: categories_type.Menus,
+    ingredientes:
+      'Cesta menu con pizza mediana (3 ingredientes) 2 refrescos medianos y ensalada (niçoise, parisina, tropical, del mar, de pimiento o italiana)',
+    precio: {
+      local: { small: 14.65 },
+      domicilio: { small: 15.65 },
+    },
+  },
 ];
 
 function compare(a: product, b: product) {

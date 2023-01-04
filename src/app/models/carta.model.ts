@@ -33,4 +33,5 @@ export enum categories_type {
   Postres = 'postres',
   Ensaladas = 'ensaladas',
   Bebidas = 'bebidas',
+  Menus = 'menus',
 }
