@@ -26,7 +26,32 @@
         <tbody>
           <tr *ngFor="let product of cesta?.products; let index = index">
             <th scope="row">{{ product.name }}</th>
-            <td>{{ product.tam }}</td>
+            <td
+              *ngIf="
+                product.name
+                  .split(':')[0]
+                  .includes(
+                    categories_type.Pizzas.toLocaleUpperCase() ||
+                      categories_type.Bocatas.toLocaleUpperCase() ||
+                      categories_type.Chapatas.toLocaleUpperCase() ||
+                      categories_type.Patatas.toLocaleUpperCase()
+                  )
+              "
+            >
+              {{ product.tam }}
+            </td>
+            <td
+              *ngIf="
+                !product.name
+                  .split(':')[0]
+                  .includes(
+                    categories_type.Pizzas.toLocaleUpperCase() ||
+                      categories_type.Bocatas.toLocaleUpperCase() ||
+                      categories_type.Chapatas.toLocaleUpperCase() ||
+                      categories_type.Patatas.toLocaleUpperCase()
+                  )
+              "
+            ></td>
             <td>{{ product.price | precio }}</td>
             <td role="button" (click)="deleteItem(index)">X</td>
           </tr>

@@ -19,4 +19,6 @@ export class ShowPriceComponent {
     name: '',
     precio: {},
   };
+
+  public categories_type = categories_type;
 }

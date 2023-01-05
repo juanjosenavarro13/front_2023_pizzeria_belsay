@@ -1,3 +1,4 @@
+import { categories_type } from 'src/app/models/carta.model';
 import { environment } from 'src/environments/environment';
 import { CestaService } from './../../services/cesta.service';
 import { cesta } from './../../models/cesta.model';
@@ -25,6 +26,8 @@ export class CestaComponent {
     local: null,
     total: 0,
   };
+
+  public categories_type = categories_type;
 
   /**
    * reiniciar cesta
@@ -64,9 +67,22 @@ export class CestaComponent {
     text += salto;
 
     cesta?.products.forEach((el) => {
-      text += `-${el.name.split(':')[0]} ${el.tam}: ${
-        el.name.split(':')[1]
-      } | ${el.price}€ ${salto}`;
+      text += `-${el.name.split(':')[0]} `;
+
+      if (
+        el.name
+          .split(':')[0]
+          .includes(
+            categories_type.Pizzas.toLocaleUpperCase() ||
+              categories_type.Bocatas.toLocaleUpperCase() ||
+              categories_type.Chapatas.toLocaleUpperCase() ||
+              categories_type.Patatas.toLocaleUpperCase()
+          )
+      ) {
+        text += `${el.tam}`;
+      }
+
+      text += `${el.name.split(':')[1]} | ${el.price}€ ${salto}`;
     });
 
     text += `*Total: ${cesta?.total}€*`;

@@ -238,8 +238,8 @@ const products: product[] = [
     category: categories_type.Hamburguesas,
     ingredientes: 'Carne, lechuga y tomate.',
     precio: {
-      local: { small: 1.9 },
-      domicilio: { small: 2.1 },
+      local: { medium: 1.9 },
+      domicilio: { medium: 2.1 },
     },
   },
   {
@@ -247,8 +247,8 @@ const products: product[] = [
     category: categories_type.Hamburguesas,
     ingredientes: '2 carnes, lechuga, tomate, huevo, queso y beicon.',
     precio: {
-      local: { small: 3.3 },
-      domicilio: { small: 3.6 },
+      local: { medium: 3.3 },
+      domicilio: { medium: 3.6 },
     },
   },
   {
@@ -256,8 +256,8 @@ const products: product[] = [
     category: categories_type.Hamburguesas,
     ingredientes: 'Carne, lechuga, tomate, cebolla, beicon y salsa barbacoa.',
     precio: {
-      local: { small: 2.5 },
-      domicilio: { small: 2.75 },
+      local: { medium: 2.5 },
+      domicilio: { medium: 2.75 },
     },
   },
   {
@@ -265,8 +265,8 @@ const products: product[] = [
     category: categories_type.Hamburguesas,
     ingredientes: 'Carne, queso, lechuga y tomate.',
     precio: {
-      local: { small: 2.1 },
-      domicilio: { small: 2.3 },
+      local: { medium: 2.1 },
+      domicilio: { medium: 2.3 },
     },
   },
   {
@@ -274,8 +274,8 @@ const products: product[] = [
     category: categories_type.Hamburguesas,
     ingredientes: 'Carne, lechuga, tomate, cebolla y maíz.',
     precio: {
-      local: { small: 2.1 },
-      domicilio: { small: 2.55 },
+      local: { medium: 2.1 },
+      domicilio: { medium: 2.55 },
     },
   },
   {
@@ -283,8 +283,8 @@ const products: product[] = [
     category: categories_type.Hamburguesas,
     ingredientes: 'Queso cheddar, beicon y cebolla.',
     precio: {
-      local: { small: 5.5 },
-      domicilio: { small: 6.6 },
+      local: { medium: 5.5 },
+      domicilio: { medium: 6.6 },
     },
   },
   {
@@ -292,8 +292,8 @@ const products: product[] = [
     category: categories_type.Hamburguesas,
     ingredientes: 'Carne, lechuga, tomate y huevo.',
     precio: {
-      local: { small: 2.4 },
-      domicilio: { small: 2.6 },
+      local: { medium: 2.4 },
+      domicilio: { medium: 2.6 },
     },
   },
   {
@@ -301,8 +301,8 @@ const products: product[] = [
     category: categories_type.Hamburguesas,
     ingredientes: 'Pollo, lechuga y mahonesa.',
     precio: {
-      local: { small: 2.9 },
-      domicilio: { small: 3.2 },
+      local: { medium: 2.9 },
+      domicilio: { medium: 3.2 },
     },
   },
   {
@@ -311,8 +311,8 @@ const products: product[] = [
     ingredientes:
       'Carne de pollo rebozado crujiento, lechuga, tomate, mayonesa y barbacoa.',
     precio: {
-      local: { small: 1.95 },
-      domicilio: { small: 3.3 },
+      local: { medium: 1.95 },
+      domicilio: { medium: 3.3 },
     },
   },
   {
@@ -320,8 +320,8 @@ const products: product[] = [
     category: categories_type.Hamburguesas,
     ingredientes: 'Carne, lechuga, tomate, queso, beicon y huevo.',
     precio: {
-      local: { small: 2.9 },
-      domicilio: { small: 3.1 },
+      local: { medium: 2.9 },
+      domicilio: { medium: 3.1 },
     },
   },
   // paninis
@@ -330,8 +330,8 @@ const products: product[] = [
     category: categories_type.Paninis,
     ingredientes: 'Panini base y jamón york.',
     precio: {
-      local: { small: 2.3 },
-      domicilio: { small: 2.6 },
+      local: { medium: 2.3 },
+      domicilio: { medium: 2.6 },
     },
   },
   {
@@ -339,8 +339,8 @@ const products: product[] = [
     category: categories_type.Paninis,
     ingredientes: 'Panini base, jamón serrano, champiñón y beicon.',
     precio: {
-      local: { small: 3.25 },
-      domicilio: { small: 3.8 },
+      local: { medium: 3.25 },
+      domicilio: { medium: 3.8 },
     },
   },
   {
@@ -348,8 +348,8 @@ const products: product[] = [
     category: categories_type.Paninis,
     ingredientes: 'Panini base, gambas, anchoas y champiñón.',
     precio: {
-      local: { small: 3.25 },
-      domicilio: { small: 3.8 },
+      local: { medium: 3.25 },
+      domicilio: { medium: 3.8 },
     },
   },
   {
@@ -357,8 +357,8 @@ const products: product[] = [
     category: categories_type.Paninis,
     ingredientes: 'Panini base, alcachofa, champiñón y york.',
     precio: {
-      local: { small: 3.25 },
-      domicilio: { small: 3.8 },
+      local: { medium: 3.25 },
+      domicilio: { medium: 3.8 },
     },
   },
   {
@@ -366,8 +366,8 @@ const products: product[] = [
     category: categories_type.Paninis,
     ingredientes: 'Panini base, salami, salchichas y york.',
     precio: {
-      local: { small: 3.25 },
-      domicilio: { small: 3.8 },
+      local: { medium: 3.25 },
+      domicilio: { medium: 3.8 },
     },
   },
   {
@@ -375,8 +375,8 @@ const products: product[] = [
     category: categories_type.Paninis,
     ingredientes: 'Panini base y mágica mezcla de quesos.',
     precio: {
-      local: { small: 3.25 },
-      domicilio: { small: 3.8 },
+      local: { medium: 3.25 },
+      domicilio: { medium: 3.8 },
     },
   },
   {
@@ -384,8 +384,8 @@ const products: product[] = [
     category: categories_type.Paninis,
     ingredientes: 'Panini base, atún y champiñón.',
     precio: {
-      local: { small: 3.25 },
-      domicilio: { small: 3.8 },
+      local: { medium: 3.25 },
+      domicilio: { medium: 3.8 },
     },
   },
   // bocatas
@@ -394,8 +394,8 @@ const products: product[] = [
     category: categories_type.Bocatas,
     ingredientes: 'Jamón serrano, tomate y aceite.',
     precio: {
-      local: { small: 2.9 },
-      domicilio: { small: 3.1 },
+      local: { medium: 2.9 },
+      domicilio: { medium: 3.1 },
     },
   },
   {
@@ -403,8 +403,8 @@ const products: product[] = [
     category: categories_type.Bocatas,
     ingredientes: 'Anchoa, queso y pimiento.',
     precio: {
-      local: { small: 3.45 },
-      domicilio: { small: 3.75 },
+      local: { medium: 3.45 },
+      domicilio: { medium: 3.75 },
     },
   },
   {
@@ -412,8 +412,8 @@ const products: product[] = [
     category: categories_type.Bocatas,
     ingredientes: 'Lomo, beicon, salsa barbacoa y tomate natural.',
     precio: {
-      local: { small: 3.45 },
-      domicilio: { small: 3.8 },
+      local: { medium: 3.45 },
+      domicilio: { medium: 3.8 },
     },
   },
   {
@@ -421,8 +421,8 @@ const products: product[] = [
     category: categories_type.Bocatas,
     ingredientes: 'Tortilla o lomo.',
     precio: {
-      local: { small: 2.9 },
-      domicilio: { small: 3.1 },
+      local: { medium: 2.9 },
+      domicilio: { medium: 3.1 },
     },
   },
   {
@@ -430,8 +430,8 @@ const products: product[] = [
     category: categories_type.Bocatas,
     ingredientes: 'Lomo mechado, cebolla frita y salsa al whisky.',
     precio: {
-      local: { small: 3.45 },
-      domicilio: { small: 3.75 },
+      local: { medium: 3.45 },
+      domicilio: { medium: 3.75 },
     },
   },
   {
@@ -439,8 +439,8 @@ const products: product[] = [
     category: categories_type.Bocatas,
     ingredientes: 'Lomo, beicon y cebolla.',
     precio: {
-      local: { small: 3.45 },
-      domicilio: { small: 3.8 },
+      local: { medium: 3.45 },
+      domicilio: { medium: 3.8 },
     },
   },
   {
@@ -448,8 +448,8 @@ const products: product[] = [
     category: categories_type.Bocatas,
     ingredientes: 'Jamón york y queso.',
     precio: {
-      local: { small: 2.9 },
-      domicilio: { small: 3.1 },
+      local: { medium: 2.9 },
+      domicilio: { medium: 3.1 },
     },
   },
   {
@@ -457,8 +457,8 @@ const products: product[] = [
     category: categories_type.Bocatas,
     ingredientes: 'Atún, huevo, pimiento y mahonesa.',
     precio: {
-      local: { small: 3.45 },
-      domicilio: { small: 3.75 },
+      local: { medium: 3.45 },
+      domicilio: { medium: 3.75 },
     },
   },
   {
@@ -466,8 +466,8 @@ const products: product[] = [
     category: categories_type.Bocatas,
     ingredientes: 'Lomo, jamón serrano y pimiento.',
     precio: {
-      local: { small: 3.45 },
-      domicilio: { small: 3.8 },
+      local: { medium: 3.45 },
+      domicilio: { medium: 3.8 },
     },
   },
   {
@@ -475,8 +475,8 @@ const products: product[] = [
     category: categories_type.Bocatas,
     ingredientes: 'Tortilla de patatas con beicon o pimiento morrón.',
     precio: {
-      local: { small: 3.3 },
-      domicilio: { small: 3.45 },
+      local: { medium: 3.3 },
+      domicilio: { medium: 3.45 },
     },
   },
   {
@@ -484,8 +484,8 @@ const products: product[] = [
     category: categories_type.Bocatas,
     ingredientes: 'Pechuga de pollo, lechuga, tomate y mahonesa.',
     precio: {
-      local: { small: 3.5 },
-      domicilio: { small: 3.8 },
+      local: { medium: 3.5 },
+      domicilio: { medium: 3.8 },
     },
   },
   {
@@ -493,8 +493,8 @@ const products: product[] = [
     category: categories_type.Bocatas,
     ingredientes: 'Palometa ahumada, roquefort o queso fresco.',
     precio: {
-      local: { small: 3.75 },
-      domicilio: { small: 4 },
+      local: { medium: 3.75 },
+      domicilio: { medium: 4 },
     },
   },
   {
@@ -502,8 +502,8 @@ const products: product[] = [
     category: categories_type.Bocatas,
     ingredientes: 'Beicon y queso',
     precio: {
-      local: { small: 3.2 },
-      domicilio: { small: 3.3 },
+      local: { medium: 3.2 },
+      domicilio: { medium: 3.3 },
     },
   },
   {
@@ -511,8 +511,8 @@ const products: product[] = [
     category: categories_type.Bocatas,
     ingredientes: 'Lechuga, tomate, huevo, mahonesa, espárrago y queso fresco.',
     precio: {
-      local: { small: 3.5 },
-      domicilio: { small: 3.8 },
+      local: { medium: 3.5 },
+      domicilio: { medium: 3.8 },
     },
   },
   {
@@ -520,8 +520,8 @@ const products: product[] = [
     category: categories_type.Bocatas,
     ingredientes: 'Beicon, escalope de pollo y queso fundido.',
     precio: {
-      local: { small: 3.75 },
-      domicilio: { small: 4 },
+      local: { medium: 3.75 },
+      domicilio: { medium: 4 },
     },
   },
   {
@@ -529,8 +529,8 @@ const products: product[] = [
     category: categories_type.Bocatas,
     ingredientes: 'Lomo y queso fundido',
     precio: {
-      local: { small: 3.3 },
-      domicilio: { small: 3.45 },
+      local: { medium: 3.3 },
+      domicilio: { medium: 3.45 },
     },
   },
   {
@@ -538,8 +538,8 @@ const products: product[] = [
     category: categories_type.Bocatas,
     ingredientes: 'Salsichas, lechuga, tomate y mahonesa.',
     precio: {
-      local: { small: 3.45 },
-      domicilio: { small: 3.8 },
+      local: { medium: 3.45 },
+      domicilio: { medium: 3.8 },
     },
   },
   {
@@ -547,8 +547,8 @@ const products: product[] = [
     category: categories_type.Bocatas,
     ingredientes: 'Lomo, jamón y salsa verde.',
     precio: {
-      local: { small: 3.45 },
-      domicilio: { small: 3.75 },
+      local: { medium: 3.45 },
+      domicilio: { medium: 3.75 },
     },
   },
   {
@@ -556,8 +556,8 @@ const products: product[] = [
     category: categories_type.Bocatas,
     ingredientes: 'Hamburguesa frita con salsa barbacoa y cebolla',
     precio: {
-      local: { small: 3.3 },
-      domicilio: { small: 3.45 },
+      local: { medium: 3.3 },
+      domicilio: { medium: 3.45 },
     },
   },
   {
@@ -565,8 +565,8 @@ const products: product[] = [
     category: categories_type.Bocatas,
     ingredientes: 'Lechuga, tomate, atún, rabanitos de mar y mahonesa.',
     precio: {
-      local: { small: 3.45 },
-      domicilio: { small: 3.8 },
+      local: { medium: 3.45 },
+      domicilio: { medium: 3.8 },
     },
   },
   {
@@ -574,8 +574,8 @@ const products: product[] = [
     category: categories_type.Bocatas,
     ingredientes: 'Gambas a la plancha en salsa ali-oli.',
     precio: {
-      local: { small: 3.75 },
-      domicilio: { small: 4 },
+      local: { medium: 3.75 },
+      domicilio: { medium: 4 },
     },
   },
   // hot dogs
@@ -584,8 +584,8 @@ const products: product[] = [
     category: categories_type.Hot_dogs,
     ingredientes: 'Pan y salsicha',
     precio: {
-      local: { small: 1.9 },
-      domicilio: { small: 2.1 },
+      local: { medium: 1.9 },
+      domicilio: { medium: 2.1 },
     },
   },
   {
@@ -593,8 +593,8 @@ const products: product[] = [
     category: categories_type.Hot_dogs,
     ingredientes: 'Queso, salsicha y beicon.',
     precio: {
-      local: { small: 2.3 },
-      domicilio: { small: 2.5 },
+      local: { medium: 2.3 },
+      domicilio: { medium: 2.5 },
     },
   },
   {
@@ -602,8 +602,8 @@ const products: product[] = [
     category: categories_type.Hot_dogs,
     ingredientes: 'Tortilla francesa y salchica.',
     precio: {
-      local: { small: 2.2 },
-      domicilio: { small: 2.4 },
+      local: { medium: 2.2 },
+      domicilio: { medium: 2.4 },
     },
   },
   {
@@ -611,8 +611,8 @@ const products: product[] = [
     category: categories_type.Hot_dogs,
     ingredientes: 'Queso, salsicha, beicon y tortilla.',
     precio: {
-      local: { small: 2.6 },
-      domicilio: { small: 2.75 },
+      local: { medium: 2.6 },
+      domicilio: { medium: 2.75 },
     },
   },
   {
@@ -620,8 +620,8 @@ const products: product[] = [
     category: categories_type.Hot_dogs,
     ingredientes: 'Salsicha, aros de cebolla, tomate y tortilla.',
     precio: {
-      local: { small: 2.8 },
-      domicilio: { small: 3.1 },
+      local: { medium: 2.8 },
+      domicilio: { medium: 3.1 },
     },
   },
   {
@@ -629,8 +629,8 @@ const products: product[] = [
     category: categories_type.Hot_dogs,
     ingredientes: 'Salsicha, aros de cebolla y salsa brava.',
     precio: {
-      local: { small: 2.3 },
-      domicilio: { small: 2.6 },
+      local: { medium: 2.3 },
+      domicilio: { medium: 2.6 },
     },
   },
   {
@@ -638,8 +638,8 @@ const products: product[] = [
     category: categories_type.Hot_dogs,
     ingredientes: 'Salsicha, beicon, cebolla y salsa barbacoa.',
     precio: {
-      local: { small: 2.5 },
-      domicilio: { small: 2.75 },
+      local: { medium: 2.5 },
+      domicilio: { medium: 2.75 },
     },
   },
   // sandwiches
@@ -648,8 +648,8 @@ const products: product[] = [
     category: categories_type.Sandwiches,
     ingredientes: 'Jamón york y queso.',
     precio: {
-      local: { small: 1.9 },
-      domicilio: { small: 2.15 },
+      local: { medium: 1.9 },
+      domicilio: { medium: 2.15 },
     },
   },
   {
@@ -657,8 +657,8 @@ const products: product[] = [
     category: categories_type.Sandwiches,
     ingredientes: 'Lechuga, tomate, espárrago, huevo y mahonesa.',
     precio: {
-      local: { small: 2.2 },
-      domicilio: { small: 2.85 },
+      local: { medium: 2.2 },
+      domicilio: { medium: 2.85 },
     },
   },
   {
@@ -666,8 +666,8 @@ const products: product[] = [
     category: categories_type.Sandwiches,
     ingredientes: 'Jamón york, bechamel y emmental.',
     precio: {
-      local: { small: 3.2 },
-      domicilio: { small: 3.35 },
+      local: { medium: 3.2 },
+      domicilio: { medium: 3.35 },
     },
   },
   {
@@ -675,8 +675,8 @@ const products: product[] = [
     category: categories_type.Sandwiches,
     ingredientes: 'Jamón york, queso, huevo y beicon.',
     precio: {
-      local: { small: 2.45 },
-      domicilio: { small: 2.75 },
+      local: { medium: 2.45 },
+      domicilio: { medium: 2.75 },
     },
   },
   {
@@ -684,8 +684,8 @@ const products: product[] = [
     category: categories_type.Sandwiches,
     ingredientes: 'Jamón serrano y tortilla.',
     precio: {
-      local: { small: 2.4 },
-      domicilio: { small: 2.65 },
+      local: { medium: 2.4 },
+      domicilio: { medium: 2.65 },
     },
   },
   {
@@ -693,8 +693,8 @@ const products: product[] = [
     category: categories_type.Sandwiches,
     ingredientes: 'Jamón york, queso y tortilla.',
     precio: {
-      local: { small: 2.45 },
-      domicilio: { small: 2.75 },
+      local: { medium: 2.45 },
+      domicilio: { medium: 2.75 },
     },
   },
   {
@@ -702,8 +702,8 @@ const products: product[] = [
     category: categories_type.Sandwiches,
     ingredientes: 'Lechuga, tomate, queso fresco y emmental.',
     precio: {
-      local: { small: 2.95 },
-      domicilio: { small: 3.1 },
+      local: { medium: 2.95 },
+      domicilio: { medium: 3.1 },
     },
   },
   {
@@ -711,8 +711,8 @@ const products: product[] = [
     category: categories_type.Sandwiches,
     ingredientes: 'Atún, pimiento morrón y huevo duro.',
     precio: {
-      local: { small: 2.95 },
-      domicilio: { small: 3.1 },
+      local: { medium: 2.95 },
+      domicilio: { medium: 3.1 },
     },
   },
   {
@@ -720,8 +720,8 @@ const products: product[] = [
     category: categories_type.Sandwiches,
     ingredientes: 'Lechuga, tomate, atún, rabanitos de mar y salsa rosa.',
     precio: {
-      local: { small: 2.95 },
-      domicilio: { small: 3.1 },
+      local: { medium: 2.95 },
+      domicilio: { medium: 3.1 },
     },
   },
   {
@@ -730,8 +730,8 @@ const products: product[] = [
     ingredientes:
       'Lechuga, tomate, atún, mahonesa, york, queso, beicon y huevo (dos pisos).',
     precio: {
-      local: { small: 3.8 },
-      domicilio: { small: 4.1 },
+      local: { medium: 3.8 },
+      domicilio: { medium: 4.1 },
     },
   },
   {
@@ -739,8 +739,8 @@ const products: product[] = [
     category: categories_type.Sandwiches,
     ingredientes: 'Tomate, beicon y tiras de escalope de pollo.',
     precio: {
-      local: { small: 3.2 },
-      domicilio: { small: 3.4 },
+      local: { medium: 3.2 },
+      domicilio: { medium: 3.4 },
     },
   },
   {
@@ -748,8 +748,8 @@ const products: product[] = [
     category: categories_type.Sandwiches,
     ingredientes: 'Palometa ahumada y salsa roquefort.',
     precio: {
-      local: { small: 3.25 },
-      domicilio: { small: 3.4 },
+      local: { medium: 3.25 },
+      domicilio: { medium: 3.4 },
     },
   },
   {
@@ -757,8 +757,8 @@ const products: product[] = [
     category: categories_type.Sandwiches,
     ingredientes: 'Lechuga, tomate, gambas a la plancha y salsa rosa.',
     precio: {
-      local: { small: 3.15 },
-      domicilio: { small: 3.3 },
+      local: { medium: 3.15 },
+      domicilio: { medium: 3.3 },
     },
   },
   {
@@ -766,8 +766,8 @@ const products: product[] = [
     category: categories_type.Sandwiches,
     ingredientes: 'Lomo a la plancha y salsa roquefort.',
     precio: {
-      local: { small: 3.1 },
-      domicilio: { small: 3.25 },
+      local: { medium: 3.1 },
+      domicilio: { medium: 3.25 },
     },
   },
   {
@@ -775,8 +775,8 @@ const products: product[] = [
     category: categories_type.Sandwiches,
     ingredientes: 'Queso fresco, anchoas y pimiento morrón.',
     precio: {
-      local: { small: 3.05 },
-      domicilio: { small: 3.2 },
+      local: { medium: 3.05 },
+      domicilio: { medium: 3.2 },
     },
   },
   {
@@ -785,8 +785,8 @@ const products: product[] = [
     ingredientes:
       'Lechuga, tomate, atún, huevo duro, aros de cebolla fresca y un legero toque de aceite de oliva',
     precio: {
-      local: { small: 2.7 },
-      domicilio: { small: 2.9 },
+      local: { medium: 2.7 },
+      domicilio: { medium: 2.9 },
     },
   },
   // patatas
@@ -795,8 +795,8 @@ const products: product[] = [
     category: categories_type.Patatas,
     ingredientes: 'Patatas Golden',
     precio: {
-      local: { small: 2.2 },
-      domicilio: { small: 2.3 },
+      local: { medium: 2.2 },
+      domicilio: { medium: 2.3 },
     },
   },
   {
@@ -813,7 +813,7 @@ const products: product[] = [
     category: categories_type.Patatas,
     ingredientes: 'Patatas normales con queso.',
     precio: {
-      local: { small: 2.75 },
+      local: { medium: 2.75 },
     },
   },
   {
@@ -821,7 +821,7 @@ const products: product[] = [
     category: categories_type.Patatas,
     ingredientes: 'Patatas normales con queso, beicon y ternera.',
     precio: {
-      local: { small: 3.6 },
+      local: { medium: 3.6 },
     },
   },
   // nachos
@@ -830,7 +830,7 @@ const products: product[] = [
     category: categories_type.Nachos,
     ingredientes: 'Nachos con queso.',
     precio: {
-      local: { small: 2.75 },
+      local: { medium: 2.75 },
     },
   },
   {
@@ -838,7 +838,7 @@ const products: product[] = [
     category: categories_type.Nachos,
     ingredientes: 'Nachos con queso.',
     precio: {
-      local: { small: 3.85 },
+      local: { medium: 3.85 },
     },
   },
   {
@@ -846,7 +846,7 @@ const products: product[] = [
     category: categories_type.Nachos,
     ingredientes: 'Nachos con queso cheddar y gouda.',
     precio: {
-      local: { small: 4.1 },
+      local: { medium: 4.1 },
     },
   },
   // pollos
@@ -855,7 +855,7 @@ const products: product[] = [
     category: categories_type.Pollos,
     ingredientes: 'Nuggets con salsa barbacoa',
     precio: {
-      local: { small: 2.95 },
+      local: { medium: 2.95 },
     },
   },
   {
@@ -863,7 +863,7 @@ const products: product[] = [
     category: categories_type.Pollos,
     ingredientes: 'Alitas con salsa barbacoa o brava.',
     precio: {
-      local: { small: 3.6 },
+      local: { medium: 3.6 },
     },
   },
   // postres
@@ -872,8 +872,8 @@ const products: product[] = [
     category: categories_type.Postres,
     ingredientes: 'CONSULTAR',
     precio: {
-      local: { small: 1 },
-      domicilio: { small: 1 },
+      local: { medium: 1 },
+      domicilio: { medium: 1 },
     },
   },
   {
@@ -881,8 +881,8 @@ const products: product[] = [
     category: categories_type.Postres,
     ingredientes: 'CONSULTAR',
     precio: {
-      local: { small: 1 },
-      domicilio: { small: 1 },
+      local: { medium: 1 },
+      domicilio: { medium: 1 },
     },
   },
   // ensaladas
@@ -891,8 +891,8 @@ const products: product[] = [
     category: categories_type.Ensaladas,
     ingredientes: 'Lechuga, tomate y cebolla.',
     precio: {
-      local: { small: 2.65 },
-      domicilio: { small: 2.9 },
+      local: { medium: 2.65 },
+      domicilio: { medium: 2.9 },
     },
   },
   {
@@ -901,8 +901,8 @@ const products: product[] = [
     ingredientes:
       'Lechuga, tomate, cebolla, huevo, atún, aceitunas y espárragos.',
     precio: {
-      local: { small: 3.5 },
-      domicilio: { small: 3.8 },
+      local: { medium: 3.5 },
+      domicilio: { medium: 3.8 },
     },
   },
   {
@@ -911,8 +911,8 @@ const products: product[] = [
     ingredientes:
       'Lechuga, tomate, pollo, york, queso, zanahoria, huevo y salsa rosa o roquefort.',
     precio: {
-      local: { small: 3.65 },
-      domicilio: { small: 4.05 },
+      local: { medium: 3.65 },
+      domicilio: { medium: 4.05 },
     },
   },
   {
@@ -921,8 +921,8 @@ const products: product[] = [
     ingredientes:
       'Lechuga, tomate, atún, york, queso, espárrago, palmitos y salsa rosa o roquefort.',
     precio: {
-      local: { small: 3.65 },
-      domicilio: { small: 4.05 },
+      local: { medium: 3.65 },
+      domicilio: { medium: 4.05 },
     },
   },
   {
@@ -930,8 +930,8 @@ const products: product[] = [
     category: categories_type.Ensaladas,
     ingredientes: 'Lechuga, gambas, rabanitos de mar y salsa rosa.',
     precio: {
-      local: { small: 3.65 },
-      domicilio: { small: 4.05 },
+      local: { medium: 3.65 },
+      domicilio: { medium: 4.05 },
     },
   },
   {
@@ -940,8 +940,8 @@ const products: product[] = [
     ingredientes:
       'Lechuga, tomate, gambas, brotes de soja, mazorquitas, piña, delicias de mar y salsa rosa.',
     precio: {
-      local: { small: 3.65 },
-      domicilio: { small: 4.06 },
+      local: { medium: 3.65 },
+      domicilio: { medium: 4.06 },
     },
   },
   {
@@ -950,8 +950,8 @@ const products: product[] = [
     ingredientes:
       'Pimientos rojos, rabanitos de mar, cebollita, mejillones, gambas y aceitunas verdes.',
     precio: {
-      local: { small: 3.95 },
-      domicilio: { small: 4.1 },
+      local: { medium: 3.95 },
+      domicilio: { medium: 4.1 },
     },
   },
   {
@@ -959,8 +959,8 @@ const products: product[] = [
     category: categories_type.Ensaladas,
     ingredientes: 'Pasta, jamón cocido, tomate, aceitunas, tortilla y queso.',
     precio: {
-      local: { small: 3.95 },
-      domicilio: { small: 4.1 },
+      local: { medium: 3.95 },
+      domicilio: { medium: 4.1 },
     },
   },
   {
@@ -969,8 +969,8 @@ const products: product[] = [
     ingredientes:
       'Lechuga, piña, queso fresco, jamón york y un suave toque de mahonesa.',
     precio: {
-      local: { small: 3.95 },
-      domicilio: { small: 4.1 },
+      local: { medium: 3.95 },
+      domicilio: { medium: 4.1 },
     },
   },
 
@@ -979,8 +979,8 @@ const products: product[] = [
     category: categories_type.Ensaladas,
     ingredientes: 'Lechuga, york, pollo y picatostes con salsa cesar.',
     precio: {
-      local: { small: 3.95 },
-      domicilio: { small: 4.1 },
+      local: { medium: 3.95 },
+      domicilio: { medium: 4.1 },
     },
   },
   // refrescos
@@ -989,8 +989,8 @@ const products: product[] = [
     category: categories_type.Bebidas,
     ingredientes: 'Lata refresco',
     precio: {
-      local: { small: 1.3 },
-      domicilio: { small: 1.45 },
+      local: { medium: 1.3 },
+      domicilio: { medium: 1.45 },
     },
   },
   {
@@ -998,8 +998,8 @@ const products: product[] = [
     category: categories_type.Bebidas,
     ingredientes: 'Lata refresco',
     precio: {
-      local: { small: 1.3 },
-      domicilio: { small: 1.45 },
+      local: { medium: 1.3 },
+      domicilio: { medium: 1.45 },
     },
   },
   {
@@ -1007,8 +1007,8 @@ const products: product[] = [
     category: categories_type.Bebidas,
     ingredientes: 'Zumo, Batidos',
     precio: {
-      local: { small: 1.3 },
-      domicilio: { small: 1.4 },
+      local: { medium: 1.3 },
+      domicilio: { medium: 1.4 },
     },
   },
   {
@@ -1016,8 +1016,8 @@ const products: product[] = [
     category: categories_type.Bebidas,
     ingredientes: 'Agua mineral',
     precio: {
-      local: { small: 1 },
-      domicilio: { small: 1.1 },
+      local: { medium: 1 },
+      domicilio: { medium: 1.1 },
     },
   },
   {
@@ -1025,8 +1025,8 @@ const products: product[] = [
     category: categories_type.Bebidas,
     ingredientes: 'Cerveza',
     precio: {
-      local: { small: 1.3 },
-      domicilio: { small: 1.45 },
+      local: { medium: 1.3 },
+      domicilio: { medium: 1.45 },
     },
   },
   {
@@ -1034,8 +1034,8 @@ const products: product[] = [
     category: categories_type.Bebidas,
     ingredientes: 'Tinto verano.',
     precio: {
-      local: { small: 1.2 },
-      domicilio: { small: 1.3 },
+      local: { medium: 1.2 },
+      domicilio: { medium: 1.3 },
     },
   },
   // menus
@@ -1045,8 +1045,8 @@ const products: product[] = [
     ingredientes:
       'Cesta menu con hamburguesa carolina, patatas medianas y refresco 33cl + postre (tarrina helado)',
     precio: {
-      local: { small: 4.6 },
-      domicilio: { small: 5 },
+      local: { medium: 4.6 },
+      domicilio: { medium: 5 },
     },
   },
   {
@@ -1055,8 +1055,8 @@ const products: product[] = [
     ingredientes:
       'Cesta menu con hamburguesa arizona o nevada, patatas medianas y refresco 33cl',
     precio: {
-      local: { small: 4.6 },
-      domicilio: { small: 5.2 },
+      local: { medium: 4.6 },
+      domicilio: { medium: 5.2 },
     },
   },
   {
@@ -1065,8 +1065,8 @@ const products: product[] = [
     ingredientes:
       'Cesta menu con bocata a elegir, patatas medianas y refresco 33cl',
     precio: {
-      local: { small: 5 },
-      domicilio: { small: 5.5 },
+      local: { medium: 5 },
+      domicilio: { medium: 5.5 },
     },
   },
   {
@@ -1075,8 +1075,8 @@ const products: product[] = [
     ingredientes:
       'Cesta menu con pizza mediana (3 ingredientes) 2 refrescos medianos y ensalada de la huerta',
     precio: {
-      local: { small: 13 },
-      domicilio: { small: 14 },
+      local: { medium: 13 },
+      domicilio: { medium: 14 },
     },
   },
   {
@@ -1085,8 +1085,8 @@ const products: product[] = [
     ingredientes:
       'Cesta menu con hamburguesa arizona o nevada, patatas GOLDEN y refresco 33cl',
     precio: {
-      local: { small: 5.2 },
-      domicilio: { small: 5.8 },
+      local: { medium: 5.2 },
+      domicilio: { medium: 5.8 },
     },
   },
   {
@@ -1095,8 +1095,8 @@ const products: product[] = [
     ingredientes:
       'Cesta menu con bocata a elegir, patatas GOLDEN y refresco 33cl',
     precio: {
-      local: { small: 5.6 },
-      domicilio: { small: 6.1 },
+      local: { medium: 5.6 },
+      domicilio: { medium: 6.1 },
     },
   },
   {
@@ -1105,8 +1105,8 @@ const products: product[] = [
     ingredientes:
       'Cesta menu con pizza mediana (3 ingredientes) 2 refrescos medianos y dos patatas medianas o una golden',
     precio: {
-      local: { small: 14.05 },
-      domicilio: { small: 15.05 },
+      local: { medium: 14.05 },
+      domicilio: { medium: 15.05 },
     },
   },
   {
@@ -1115,8 +1115,8 @@ const products: product[] = [
     ingredientes:
       'Cesta menu con pizza mediana (3 ingredientes) 2 refrescos medianos y ensalada (niçoise, parisina, tropical, del mar, de pimiento o italiana)',
     precio: {
-      local: { small: 14.65 },
-      domicilio: { small: 15.65 },
+      local: { medium: 14.65 },
+      domicilio: { medium: 15.65 },
     },
   },
 ];

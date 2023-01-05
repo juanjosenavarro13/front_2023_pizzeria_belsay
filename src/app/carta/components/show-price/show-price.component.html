@@ -28,13 +28,46 @@
       <b class="text-success">Local:</b>
     </p>
     <p *ngIf="product.precio.local?.small">
-      Pequeña: {{ product.precio.local?.small | precio }}
+      <b
+        *ngIf="
+          product.category.toLocaleUpperCase() ===
+            categories_type.Pizzas.toLocaleUpperCase() ||
+          product.category.toLocaleUpperCase() ===
+            categories_type.Chapatas.toLocaleUpperCase() ||
+          product.category.toLocaleUpperCase() ===
+            categories_type.Patatas.toLocaleUpperCase()
+        "
+        >Pequeña:</b
+      >
+      {{ product.precio.local?.small | precio }}
     </p>
     <p *ngIf="product.precio.local?.medium">
-      Mediana: {{ product.precio.local?.medium | precio }}
+      <b
+        *ngIf="
+          product.category.toLocaleUpperCase() ===
+            categories_type.Pizzas.toLocaleUpperCase() ||
+          product.category.toLocaleUpperCase() ===
+            categories_type.Chapatas.toLocaleUpperCase() ||
+          product.category.toLocaleUpperCase() ===
+            categories_type.Patatas.toLocaleUpperCase()
+        "
+        >Mediana:</b
+      >
+      {{ product.precio.local?.medium | precio }}
     </p>
     <p *ngIf="product.precio.local?.family">
-      Familiar: {{ product.precio.local?.family | precio }}
+      <b
+        *ngIf="
+          product.category.toLocaleUpperCase() ===
+            categories_type.Pizzas.toLocaleUpperCase() ||
+          product.category.toLocaleUpperCase() ===
+            categories_type.Chapatas.toLocaleUpperCase() ||
+          product.category.toLocaleUpperCase() ===
+            categories_type.Patatas.toLocaleUpperCase()
+        "
+        >Familiar:</b
+      >
+      {{ product.precio.local?.family | precio }}
     </p>
   </div>
   <div
@@ -66,13 +99,46 @@
       <b class="text-success">Domicilio:</b>
     </p>
     <p *ngIf="product.precio.domicilio?.small">
-      Pequeña: {{ product.precio.domicilio?.small | precio }}
+      <b
+        *ngIf="
+          product.category.toLocaleUpperCase() ===
+            categories_type.Pizzas.toLocaleUpperCase() ||
+          product.category.toLocaleUpperCase() ===
+            categories_type.Chapatas.toLocaleUpperCase() ||
+          product.category.toLocaleUpperCase() ===
+            categories_type.Patatas.toLocaleUpperCase()
+        "
+        >Pequeña:</b
+      >
+      {{ product.precio.domicilio?.small | precio }}
     </p>
     <p *ngIf="product.precio.domicilio?.medium">
-      Mediana: {{ product.precio.domicilio?.medium | precio }}
+      <b
+        *ngIf="
+          product.category.toLocaleUpperCase() ===
+            categories_type.Pizzas.toLocaleUpperCase() ||
+          product.category.toLocaleUpperCase() ===
+            categories_type.Chapatas.toLocaleUpperCase() ||
+          product.category.toLocaleUpperCase() ===
+            categories_type.Patatas.toLocaleUpperCase()
+        "
+        >Mediana:</b
+      >
+      {{ product.precio.domicilio?.medium | precio }}
     </p>
     <p *ngIf="product.precio.domicilio?.family">
-      Familiar: {{ product.precio.domicilio?.family | precio }}
+      <b
+        *ngIf="
+          product.category.toLocaleUpperCase() ===
+            categories_type.Pizzas.toLocaleUpperCase() ||
+          product.category.toLocaleUpperCase() ===
+            categories_type.Chapatas.toLocaleUpperCase() ||
+          product.category.toLocaleUpperCase() ===
+            categories_type.Patatas.toLocaleUpperCase()
+        "
+        >Familiar:</b
+      >
+      {{ product.precio.domicilio?.family | precio }}
     </p>
   </div>
 </div>
