@@ -12,9 +12,9 @@ export class PrecioPipe implements PipeTransform {
     const regex = /^\d+(\.\d{2})?$/;
 
     if (regex.test(value?.toString())) {
-      return value + ' €';
+      return value + '€';
     } else {
-      return value + '0 €';
+      return value + '0€';
     }
   }
 }
